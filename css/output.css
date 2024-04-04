@@ -1409,6 +1409,10 @@ video {
   .md\:text-\[clamp\(0\.8rem\2c 0\.3rem\+1vw\2c 1\.4rem\)\] {
     font-size: clamp(0.8rem,0.3rem + 1vw,1.4rem);
   }
+
+  .md\:text-\[clamp\(0\.8rem\2c 0\.2rem\+1vw\2c 1\.4rem\)\] {
+    font-size: clamp(0.8rem,0.2rem + 1vw,1.4rem);
+  }
 }
 
 @media (min-width: 1025px) {
