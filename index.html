@@ -19,7 +19,7 @@
     />
 
     <script src="js/cookie.js"></script>
-    <script src="js/slike.js"></script>
+    
 
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js
@@ -47,7 +47,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <li><a class="menu__item" href="#white_div_apt">Apartment</a></li>
         <li><a class="menu__item" href="#location">Location</a></li>
         <li><a class="menu__item" href="#contact_us">Contact</a></li>
+
+        <span>
+          <img src="img/uk.png" onclick="language('Index')" alt="United kingdomn flag icon">
+          <img src="img/german.png" onclick="language('Deutsch')" alt="german flag icon">
+          <img src="img/german.png" onclick="language('Italiano')" alt="Italia flag icon">
+          <img src="img/croatia.png" onclick="language('Hrvatski')" alt="Croatian flag icon">
+        </span>
       </ul>
+
+      
     </div>
 
     <!-- GOTOVO -->
@@ -141,27 +150,27 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
 
       <div
         id="image-slider"
-        class="z-20 col-start-1 col-end-4 row-start-2 shadow-xl splide xs:col-start-2 xs:col-end-3 h-max"
+        class="z-20 col-start-1 col-end-4 row-start-2 shadow-xl md:w-0 splide xs:col-start-2 xs:col-end-3 h-max"
       >
-        <div class="splide__track h-[40vh] md:h-[min(30rem,100%)]">
+        <div class="splide__track h-[40vh] md:h-[min(30rem,100%)] ">
           <ul class="splide__list">
             <li class="object-cover splide__slide">
-              <img class="object-cover h-full" src="img/slikica.jpg" />
+              <img class="object-cover h-full" src="img/slikica.webp" />
             </li>
             <li class="splide__slide">
-              <img class="object-cover h-full" src="img/slikica.jpg" />
+              <img class="object-cover h-full" src="img/slikica.webp" />
             </li>
             <li class="splide__slide">
-              <img class="object-cover h-full" src="img/slikica.JPG" />
+              <img class="object-cover h-full" src="img/slikica.webp" />
             </li>
           </ul>
         </div>
       </div>
-      <div
-        class="hidden bg-plava h-[min(calc(100%-3rem),calc(100%-2vh))] rounded-e-[2vw] self-center w-full col-start-3 row-start-2 lg:flex justify-center items-center"
+      <div id="short_text"
+        class="hidden bg-plava h-[min(calc(100%-3rem),calc(100%-2vh))] rounded-e-[2vw] self-center w-0 col-start-3 row-start-2 lg:flex justify-center items-center"
       >
-        <p
-          class="text-white font-main text-[clamp(0.8rem,0.2rem+1vw,3rem)] w-3/4"
+        <p 
+          class="text-white font-main text-[clamp(0.8rem,0.2rem+1vw,3rem)] opacity-0 w-3/4 appearing"
         >
           A modern, newly decorated apartment with 2 bedrooms, 1 bathroom, kitchen and a living room. We aim to exceed all your needs and improve your travelling experience.
         </p>
@@ -212,7 +221,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     >
       <div
         id="location"
-        class="h-svh w-full bg-plava grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);] md:grid-rows-[auto_4fr_1fr] snap-start snap-always md:col-start-3 md:h-[clamp(15rem,1rem+50vw,50rem)] md:rounded-[2vw]"
+        class="h-svh w-full bg-plava grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);] md:grid-rows-[auto_4fr_1fr] snap-start snap-always md:col-start-3 md:h-0 md:rounded-[2vw]"
       >
         <h3
           class="font-main text-white text-4xl font-bold p-[5vh] col-start-2 self-center md:place-self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)] md:p-[20%_0_10%_0]"
@@ -245,7 +254,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           </p>
         </div>
         <div
-          class="col-start-1 col-end-4 h-[40vh] w-full bg-black md:rounded-[2vw_0_0_2vw] md:absolute md:left-0 md:col-end-3 md:col-start-2 md:h-[70%] md:place-self-center"
+          class="col-start-1 col-end-4 h-[40vh] w-full md:w-0 bg-black md:rounded-[2vw_0_0_2vw] md:absolute md:left-0 md:col-end-3 md:col-start-2 md:h-[70%] md:place-self-center mapa"
         ></div>
         <p
           class="col-start-2 font-main text-white text-md text-center mt-[5vh] md:pb-0 md:mt-0 md:text-[clamp(0.8rem,0.2rem+1vw,1.2rem)]"
@@ -257,70 +266,70 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     <!-- Obrazac --------------------------------------------------------------------- -->
     <div
       id="contact_us"
-      class="h-screen w-full grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(3,1fr);] snap-start snap-always"
+      class="h-screen w-full grid grid-cols-[10%_1fr_10%] lg:grid-cols-[20%_1fr_20%] justify-items-center grid-rows-[repeat(3,1fr);] md:grid-rows-[repeat(5,1fr);] snap-start snap-always md:mt-[10vh] md:h-[calc(100vh/2)] "
     >
       <h3
-        class="font-main text-plava text-4xl font-bold p-[4vh] col-start-2 self-center"
+        class="font-main text-plava text-4xl font-bold p-[4vh] col-start-2 self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)] lg:mb-[5vh]"
       >
         Contact Us
       </h3>
 
       <form
-        class="bg-plava w-full col-start-2 font-main h-[min(72svh,_33rem)] lg:w-[33rem] lg:placeholder:text-base lg:text-base rounded-[25px] grid grid-cols-1 grid-rows-[repeat(13,1fr);] justify-items-center gap-2 mb-[5vh]"
+        class="bg-plava w-full col-start-2 font-main h-[min(72svh,_33rem)] rounded-[25px] grid grid-cols-1 grid-rows-[repeat(13,1fr);] justify-items-center gap-2 mb-[5vh] md:w-full md:grid-cols-[1fr_1fr] md:gap-6 md:bg-white lg:w-[50vw] md:mb-[8vh]"
       >
         <input
           required
           type="text"
           placeholder="Full Name"
-          class="text-plava text-sm placeholder:text-plava placeholder:text-sm lg:placeholder:text-base lg:text-base placeholder:font-main w-3/5 rounded-[6px] h-9 self-end p-3 mt-9"
+          class="text-plava text-sm placeholder:text-plava placeholder:text-sm  placeholder:font-main w-3/5 rounded-[6px] h-9 self-end p-3 mt-9 md:col-start-1 md:mt-0 md:bg-plava md:text-white md:placeholder:text-white md:justify-self-end md:h-12 lg:h-[max(3vw,3rem)] md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]" 
         /><input
           required
           type="email"
           placeholder="Email: example@gmail.com"
-          class="text-plava text-sm placeholder:text-plava placeholder:text-sm lg:placeholder:text-base lg:text-base placeholder:font-main w-3/5 rounded-[6px] h-9 self-start p-3"
+          class="text-plava text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-3/5 rounded-[6px] h-9 self-start p-3 md:col-start-1 md:bg-plava md:justify-self-end md:text-white md:placeholder:text-white md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         />
         <div
-          class="flex justify-between w-3/5 text-lg text-white font-main h-min"
+          class="flex justify-between w-3/5 text-lg text-white font-main h-min md:col-start-1 md:justify-self-end md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         >
-          <label for="from">From:</label>
+          <label class="md:text-plava md:self-center md:font-bold" for="from">From:</label>
           <input
             type="date"
             id="from"
-            class="text-plava lg:pl-4 w-[60%] lg:placeholder:text-base lg:text-base placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9"
+            class="text-plava lg:pl-4 w-[60%]  placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9 md:bg-plava md:text-white  md:placeholder:text-white md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
           />
         </div>
         <div
-          class="flex justify-between w-3/5 text-lg text-white font-main h-min"
+          class="flex justify-between w-3/5 text-lg text-white font-main h-min md:col-start-1 md:justify-self-end md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         >
-          <label for="to">To:</label>
+          <label class="md:text-plava md:self-center md:font-bold"  for="to">To:</label>
           <input
             type="date"
             id="to"
-            class="text-plava w-[60%] lg:pl-4 lg:placeholder:text-base lg:text-base placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9"
+            class="text-plava w-[60%] lg:pl-4  placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9  md:bg-plava md:text-white md:placeholder:text-white md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
           />
         </div>
         <textarea
           type="text"
           placeholder="Message"
-          class="text-plava resize-none lg:placeholder:text-base lg:text-base font-main text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-4/5 rounded-[6px] h-36 self-start p-3"
+          class="text-plava resize-none lg:placeholder:text-[clamp(0.8rem,0.3rem+1vw,1.3rem)] font-main text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-4/5 rounded-[6px] h-36 self-start p-3 md:row-start-1 md:row-span-4 md:col-start-2 md:place-self-center md:h-full md:bg-plava md:text-white md:placeholder:text-white md:justify-self-start md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:p-5"
         ></textarea>
         <button
-          class="text-white font-main text-lg m-[1vh] p-[0.3rem_3rem] rounded-[15px] border-[3px]"
+          class="text-white font-main text-lg m-[1vh] p-[0.3rem_3rem] rounded-[15px] border-[3px] md:col-span-2 md:text-plava md:border-plava md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]  md:font-bold lg:p-[0.5rem_4rem] lg:mt-12"
           type="submit"
         >
           Send
         </button>
         <div
-          class="flex flex-col items-center justify-center text-sm text-white font-main"
+          class="flex flex-col items-center justify-center text-sm text-white font-main md:col-span-2 md:text-[clamp(0.8rem,0.2rem+1vw,1.3rem)] md:text-plava"
         >
           <p>Email: example@gmail.com</p>
           <p>Mobile: 000 111 222</p>
         </div>
       </form>
       <footer
-        class="bg-black col-start-1 col-end-4 w-full h-[10vh] self-end flex justify-center items-center"
+        class="bg-black col-start-1 col-end-4 w-full h-[10vh] self-end flex justify-center items-center md:h-[10vh]"
       >
-        <p class="text-sm text-gray-400 font-main">
+        <p class="text-sm text-gray-400 font-main md:text-[clamp(0.5rem,0.3rem+1vw,1rem)]">
           &COPY; David Gušćić | All rights reserved
         </p>
       </footer>
@@ -328,5 +337,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     <script>
       new Splide("#image-slider").mount();
     </script>
+    
   </body>
 </html>

@@ -47,3 +47,43 @@ addEventListener("scroll", (event) => {
   paintBlue(obrazac, hamburger);
   RemoveIfOnScreen(main, hamburger);
 });
+
+// Postavljanje animacija
+const mapa = document.querySelector(".mapa");
+
+const short_text = document.querySelector("#short_text");
+const appearing = document.querySelector(".appearing");
+
+const slika = document.querySelector("#image-slider");
+const observer_location = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        lokacija.style.animationName = "location_scroll";
+        mapa.style.animationName = "map_scroll";
+      }
+    });
+  },
+  { threshold: 0 }
+);
+
+const observer_apart = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        slika.style.animationName = "slika";
+        short_text.style.animationName = "map_scroll";
+        appearing.style.animationName = "appearing";
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+// Check if the media query is true
+if (mediaQuery.matches) {
+  // Then trigger an alert
+  observer_location.observe(obrazac);
+  observer_apart.observe(apt);
+}

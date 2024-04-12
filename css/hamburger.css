@@ -91,3 +91,85 @@
   .menu__item:hover {
     background-color: #CFD8DC;
   }
+
+  .menu__box span>*{
+    width:30px;
+  aspect-ratio: 1;
+cursor: pointer;
+transition: all 100ms ease-in;
+
+}
+
+
+.menu__box span>*:hover,.menu__box span>*:focus{
+  scale: 1.1;
+}
+
+  .menu__box span{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    position: absolute;
+    bottom:5%;
+    gap: 5%;
+  }
+
+
+
+
+  /* Animacije */
+
+@media (min-width: 768px){
+
+  @keyframes slika {
+    to{
+      width:100%;
+    }
+    
+  }
+
+  @keyframes appearing {
+    to{
+      opacity: 1;
+    }
+    
+  }
+
+  @keyframes map_scroll {
+    to{width:100%}
+    
+  }
+
+  @keyframes location_scroll {
+    to{height:clamp(15rem , 1rem + 50vw , 50rem)}
+    
+  }
+
+
+  
+
+
+  #image-slider{animation:   800ms   alternate forwards;
+}
+
+#short_text{animation:  800ms   alternate forwards;
+  animation-delay: 500ms;
+}
+
+.appearing{
+  animation: 300ms   alternate forwards;
+  animation-delay: 1000ms;
+}
+
+  #location{
+    animation:  1000ms   alternate forwards;
+    animation-delay: 300ms;
+  }
+
+  .mapa{
+    animation:  1000ms   alternate forwards;
+    animation-delay: 400ms;
+    
+    
+  }
+  }
