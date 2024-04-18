@@ -19,7 +19,11 @@
     />
 
     <script src="js/cookie.js"></script>
-    <script src="js/slike.js"></script>
+
+
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHUGtI5gN9TycVCu0oom1MfDcLeZyUTlc&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    
 
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js
@@ -47,7 +51,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <li><a class="menu__item" href="#white_div_apt">Apartment</a></li>
         <li><a class="menu__item" href="#location">Location</a></li>
         <li><a class="menu__item" href="#contact_us">Contact</a></li>
+
+        <span>
+          <img src="img/uk.png" onclick="language('Index')" alt="United kingdomn flag icon">
+          <img src="img/german.png" onclick="language('Deutsch')" alt="german flag icon">
+          <img src="img/german.png" onclick="language('Italiano')" alt="Italia flag icon">
+          <img src="img/croatia.png" onclick="language('Hrvatski')" alt="Croatian flag icon">
+        </span>
       </ul>
+
+      
     </div>
 
     <!-- GOTOVO -->
@@ -131,40 +144,39 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     <!-- APARTMANI--------------------------------------------------------------- -->
     <div
       id="white_div_apt"
-      class="h-svh md:h-auto w-full grid grid-cols-[10%_80%_10%] justify-items-center grid-rows-[repeat(5,auto);] snap-start snap-always lg:grid-cols-[10%_40%_40%_10%]"
+      class="h-svh md:h-auto w-full grid grid-cols-[10%_80%_10%] justify-items-center grid-rows-[repeat(5,auto);] snap-start snap-always lg:grid-cols-[10%_40%_40%_10%] md:mt-[3vh]"
     >
       <h3
-        class="font-main text-4xl md:text-3xl lg:mt-[5rem] text-plava p-[3vh] self-center font-bold lg:col-end-3 col-end-3 col-start-2"
+        class="font-main text-4xl md:text-[clamp(1.6rem,1.2rem+1vw,3rem)] lg:mt-[5rem] text-plava p-[3vh] self-center font-bold lg:col-end-3 col-end-3 col-start-2"
       >
         4 Person <span class="hidden md:inline">Apartment</span>
       </h3>
 
       <div
         id="image-slider"
-        class="z-20 col-start-1 col-end-4 row-start-2 shadow-xl splide xs:col-start-2 xs:col-end-3 h-max"
+        class="z-20 col-start-1 col-end-4 row-start-2 shadow-xl md:w-0 splide xs:col-start-2 xs:col-end-3 h-max"
       >
-        <div class="splide__track h-[40vh] md:h-[min(30rem,100%)]">
+        <div class="splide__track h-[40vh] md:h-[min(30rem,100%)] ">
           <ul class="splide__list">
             <li class="object-cover splide__slide">
-              <img class="object-cover h-full" src="img/slikica.jpg" />
+              <img class="object-cover h-full" src="img/slikica.webp" />
             </li>
             <li class="splide__slide">
-              <img class="object-cover h-full" src="img/slikica.jpg" />
+              <img class="object-cover h-full" src="img/slikica.webp" />
             </li>
             <li class="splide__slide">
-              <img class="object-cover h-full" src="img/slikica.JPG" />
+              <img class="object-cover h-full" src="img/slikica.webp" />
             </li>
           </ul>
         </div>
       </div>
-      <div
-        class="hidden bg-plava h-[min(calc(100%-3rem),calc(100%-2vh))] rounded-e-[1.5rem] self-center w-full col-start-3 row-start-2 lg:flex justify-center items-center"
+      <div id="short_text"
+        class="hidden bg-plava h-[min(calc(100%-3rem),calc(100%-2vh))] rounded-e-[2vw] self-center w-0 col-start-3 row-start-2 lg:flex justify-center items-center"
       >
-        <p
-          class="text-white font-main text-[clamp(0.8rem,0.2rem+1vw,3rem)] w-3/4"
+        <p 
+          class="text-white font-main text-[clamp(0.8rem,0.2rem+1vw,3rem)] opacity-0 w-3/4 appearing"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-          dicta commodi, optio totam sed maxime tempore,
+          A modern, newly decorated apartment with 2 bedrooms, 1 bathroom, kitchen and a living room. We aim to exceed all your needs and improve your travelling experience.
         </p>
       </div>
       <ul
@@ -209,98 +221,119 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     </div>
     <!-- Lokacija ------------------------------------------------------------------- -->
     <div
-      id="location"
-      class="h-svh w-full bg-plava grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);] snap-start snap-always md:m-auto md:rounded-[2vw] md:mt-20 md:grid md:grid-cols-[40%_60%] md:w-[90vw] md:h-[clamp(30rem,20rem+20vw,40rem)] md:p-[2vh_0] lg:w-[min(70rem,80vw)]"
+      class="md:relative md:grid md:grid-cols-[10%_55%_25%_10%] lg:grid-cols-[15%_45%_25%_15%] md:mt-[10vh]"
     >
-      <h3
-        class="font-main text-white text-4xl font-bold p-[5vh] col-start-2 self-center md:col-start-1 md:p-[15%_0_0_0]"
-      >
-        Location
-      </h3>
-
-      <p
-        class="font-main text-white text-[1.1rem] col-start-2 w-full m-auto pb-[6vh] md:col-start-1 md:w-[70%] md:mt-[5rem] md:text-[clamp(0.8rem,0.4rem+1vw,1.1yrem)] md:m-0 md:justify-self-end md:p-[0_1rem_0_0]"
-      >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nam
-        pariatur accusamus id qui quidem suscipit praesentium architecto
-        explicabo cum,
-      </p>
       <div
-        class="col-start-1 col-end-4 h-[40vh] w-full bg-black md:col-start-2 md:rounded-[2vw] md:w-[90%] md:h-[clamp(15rem,10rem+15vw,25rem)]"
-      ></div>
-      <p
-        class="col-start-2 font-main text-white text-md text-center mt-[5vh] md:mt-[1rem] md:pb-20"
+        id="location"
+        class="h-svh w-full bg-plava grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);] md:grid-rows-[auto_4fr_1fr] snap-start snap-always md:col-start-3 md:h-0 md:rounded-[2vw]"
       >
-        Adress : Palit 232, Rab
-      </p>
+        <h3
+          class="font-main text-white text-4xl font-bold p-[5vh] col-start-2 self-center md:place-self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)] md:p-[20%_0_10%_0]"
+        >
+          Location
+        </h3>
+        <div
+          class="font-main text-white text-[1.1rem] col-start-2 w-full m-auto md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:mt-0 lg:w-[90%] md:pb-[2vh] lg:pb-[20%]"
+        >
+          <p class="lg:hidden long_sm:pb-[2vh]">
+            Apartments Gušćić are located in the ideal position within the
+            island of Rab. <section class="lg:hidden long_sm:pb-[3vh]">With stunning beaches in the close distance, the
+            closest one being inside the 150 m range, and a 5 minute walk from
+            the gorgeous old Town of Rab.</section>
+          </p>
+          <p class="hidden lg:block">
+            Apartments Gušćić are located in the ideal position within the
+            island of Rab.
+          </p>
+          <br class="hidden lg:block">
+          <p class="hidden lg:block">
+            With stunning beaches and a beautifull adriatic sea just 100 meters away, and a 5 minute walk from the gorgeous old
+            Town of Rab.
+          </p>
+          <br  />
+          <p class="hidden lg:block">
+            With all of that there are police station, ambulance and a grocery store all within 100 meters.
+          </p>
+        </div>
+        <div
+          class="col-start-1 col-end-4 h-[40vh] w-full md:w-0 overflow-hidden bg-black md:rounded-[2vw_0_0_2vw] md:absolute md:left-0 md:col-end-3 md:col-start-2 md:h-[70%] md:place-self-center mapa"
+        ><gmp-map center="44.7638053894043,14.75610637664795" zoom="15" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="44.7638053894043,14.75610637664795" title="My location"></gmp-advanced-marker>
+    </gmp-map></div>
+        <p
+          class="col-start-2 font-main text-white text-md text-center mt-[5vh] md:pb-0 md:mt-0 md:text-[clamp(0.8rem,0.2rem+1vw,1.2rem)]"
+        >
+          Adress : Palit 232, Rab
+        </p>
+      </div>
     </div>
     <!-- Obrazac --------------------------------------------------------------------- -->
     <div
       id="contact_us"
-      class="h-screen w-full grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(3,1fr);] snap-start snap-always"
+      class="h-screen w-full grid grid-cols-[10%_1fr_10%] lg:grid-cols-[20%_1fr_20%] justify-items-center grid-rows-[repeat(3,1fr);] md:grid-rows-[repeat(5,1fr);] snap-start snap-always md:mt-[10vh] md:h-[calc(100vh/2)] "
     >
       <h3
-        class="font-main text-plava text-4xl font-bold p-[4vh] col-start-2 self-center"
+        class="font-main text-plava text-4xl font-bold p-[4vh] col-start-2 self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)] lg:mb-[5vh]"
       >
         Contact Us
       </h3>
 
       <form
-        class="bg-plava w-full col-start-2 font-main h-[min(72svh,_33rem)] lg:w-[33rem] lg:placeholder:text-base lg:text-base rounded-[25px] grid grid-cols-1 grid-rows-[repeat(13,1fr);] justify-items-center gap-2 mb-[5vh]"
+        class="bg-plava w-full col-start-2 font-main h-[min(72svh,_36rem)] rounded-[25px] grid grid-cols-1 grid-rows-[repeat(13,1fr);] justify-items-center gap-2 mb-[5vh] md:w-full md:grid-cols-[1fr_1fr] md:gap-6 md:bg-white lg:w-[50vw] md:mb-[8vh]"
       >
         <input
           required
           type="text"
           placeholder="Full Name"
-          class="text-plava text-sm placeholder:text-plava placeholder:text-sm lg:placeholder:text-base lg:text-base placeholder:font-main w-3/5 rounded-[6px] h-9 self-end p-3 mt-9"
+          class="text-plava text-sm placeholder:text-plava placeholder:text-sm  placeholder:font-main w-3/5 rounded-[6px] h-9 self-end p-3 mt-9 md:col-start-1 md:mt-0 md:bg-plava md:text-white md:placeholder:text-white md:justify-self-end md:h-12 lg:h-[max(3vw,3rem)] md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]" 
         /><input
           required
           type="email"
           placeholder="Email: example@gmail.com"
-          class="text-plava text-sm placeholder:text-plava placeholder:text-sm lg:placeholder:text-base lg:text-base placeholder:font-main w-3/5 rounded-[6px] h-9 self-start p-3"
+          class="text-plava text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-3/5 rounded-[6px] h-9 self-start p-3 md:col-start-1 md:bg-plava md:justify-self-end md:text-white md:placeholder:text-white md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         />
         <div
-          class="flex justify-between w-3/5 text-lg text-white font-main h-min"
+          class="flex justify-between w-3/5 text-lg text-white font-main h-min md:col-start-1 md:justify-self-end md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         >
-          <label for="from">From:</label>
+          <label class="md:text-plava md:self-center md:font-bold" for="from">From:</label>
           <input
             type="date"
             id="from"
-            class="text-plava lg:pl-4 w-[60%] lg:placeholder:text-base lg:text-base placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9"
+            class="text-plava lg:pl-4 w-[60%]  placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9 md:bg-plava md:text-white  md:placeholder:text-white md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
           />
         </div>
         <div
-          class="flex justify-between w-3/5 text-lg text-white font-main h-min"
+          class="flex justify-between w-3/5 text-lg text-white font-main h-min md:col-start-1 md:justify-self-end md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         >
-          <label for="to">To:</label>
+          <label class="md:text-plava md:self-center md:font-bold"  for="to">To:</label>
           <input
             type="date"
             id="to"
-            class="text-plava w-[60%] lg:pl-4 lg:placeholder:text-base lg:text-base placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9"
+            class="text-plava w-[60%] lg:pl-4  placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9  md:bg-plava md:text-white md:placeholder:text-white md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
           />
         </div>
         <textarea
           type="text"
           placeholder="Message"
-          class="text-plava resize-none lg:placeholder:text-base lg:text-base font-main text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-4/5 rounded-[6px] h-36 self-start p-3"
+          class="text-plava resize-none lg:placeholder:text-[clamp(0.8rem,0.3rem+1vw,1.3rem)] font-main text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-4/5 rounded-[6px] h-36 self-start p-3 md:row-start-1 md:row-span-4 md:col-start-2 md:place-self-center md:h-full md:bg-plava md:text-white md:placeholder:text-white md:justify-self-start md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:p-5"
         ></textarea>
         <button
-          class="text-white font-main text-lg m-[1vh] p-[0.3rem_3rem] rounded-[15px] border-[3px]"
+          class="text-white font-main text-lg m-[1vh] p-[0.3rem_3rem] rounded-[15px] border-[3px] md:col-span-2 md:text-plava md:border-plava md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]  md:font-bold lg:p-[0.5rem_4rem] lg:mt-12"
           type="submit"
         >
           Send
         </button>
         <div
-          class="flex flex-col items-center justify-center text-sm text-white font-main"
+          class="flex flex-col items-center justify-center text-sm text-white font-main md:col-span-2 md:text-[clamp(0.8rem,0.2rem+1vw,1.3rem)] md:text-plava"
         >
-          <p>Email: example@gmail.com</p>
-          <p>Mobile: 000 111 222</p>
+          <p>Email: aptguscic@gmail.com</p>
+          <p>Mobile: +385 98 175 1564</p>
         </div>
       </form>
       <footer
-        class="bg-black col-start-1 col-end-4 w-full h-[10vh] self-end flex justify-center items-center"
+        class="bg-black col-start-1 col-end-4 w-full h-[10vh] self-end flex justify-center items-center md:h-[10vh]"
       >
-        <p class="text-sm text-gray-400 font-main">
+        <p class="text-sm text-gray-400 font-main md:text-[clamp(0.5rem,0.3rem+1vw,1rem)]">
           &COPY; David Gušćić | All rights reserved
         </p>
       </footer>
@@ -308,5 +341,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     <script>
       new Splide("#image-slider").mount();
     </script>
+    
   </body>
 </html>
