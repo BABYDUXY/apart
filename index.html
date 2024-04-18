@@ -19,6 +19,10 @@
     />
 
     <script src="js/cookie.js"></script>
+
+
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHUGtI5gN9TycVCu0oom1MfDcLeZyUTlc&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
     
 
     <script src="
@@ -243,19 +247,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           </p>
           <br class="hidden lg:block">
           <p class="hidden lg:block">
-            With stunning beaches in the close distance, the closest one being
-            inside the 150 m range, and a 5 minute walk from the gorgeous old
+            With stunning beaches and a beautifull adriatic sea just 100 meters away, and a 5 minute walk from the gorgeous old
             Town of Rab.
           </p>
           <br  />
           <p class="hidden lg:block">
-            There are an ambulance, police station and a grocery store all
-            within 100 m radius as well.
+            With all of that there are police station, ambulance and a grocery store all within 100 meters.
           </p>
         </div>
         <div
-          class="col-start-1 col-end-4 h-[40vh] w-full md:w-0 bg-black md:rounded-[2vw_0_0_2vw] md:absolute md:left-0 md:col-end-3 md:col-start-2 md:h-[70%] md:place-self-center mapa"
-        ></div>
+          class="col-start-1 col-end-4 h-[40vh] w-full md:w-0 overflow-hidden bg-black md:rounded-[2vw_0_0_2vw] md:absolute md:left-0 md:col-end-3 md:col-start-2 md:h-[70%] md:place-self-center mapa"
+        ><gmp-map center="44.7638053894043,14.75610637664795" zoom="15" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="44.7638053894043,14.75610637664795" title="My location"></gmp-advanced-marker>
+    </gmp-map></div>
         <p
           class="col-start-2 font-main text-white text-md text-center mt-[5vh] md:pb-0 md:mt-0 md:text-[clamp(0.8rem,0.2rem+1vw,1.2rem)]"
         >
@@ -275,7 +279,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       </h3>
 
       <form
-        class="bg-plava w-full col-start-2 font-main h-[min(72svh,_33rem)] rounded-[25px] grid grid-cols-1 grid-rows-[repeat(13,1fr);] justify-items-center gap-2 mb-[5vh] md:w-full md:grid-cols-[1fr_1fr] md:gap-6 md:bg-white lg:w-[50vw] md:mb-[8vh]"
+        class="bg-plava w-full col-start-2 font-main h-[min(72svh,_36rem)] rounded-[25px] grid grid-cols-1 grid-rows-[repeat(13,1fr);] justify-items-center gap-2 mb-[5vh] md:w-full md:grid-cols-[1fr_1fr] md:gap-6 md:bg-white lg:w-[50vw] md:mb-[8vh]"
       >
         <input
           required
