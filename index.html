@@ -281,22 +281,32 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       <form
         class="bg-plava w-full col-start-2 font-main h-[min(72svh,_36rem)] rounded-[25px] grid grid-cols-1 grid-rows-[repeat(13,1fr);] justify-items-center gap-2 mb-[5vh] md:w-full md:grid-cols-[1fr_1fr] md:gap-6 md:bg-white lg:w-[50vw] md:mb-[8vh]"
       >
+
+        <input type="text" name="name" class="zarobi text-plava text-sm placeholder:text-plava placeholder:text-sm  placeholder:font-main w-3/5 rounded-[6px] h-9 self-end p-3 mt-9 md:col-start-1 md:mt-0 md:bg-plava md:text-white md:placeholder:text-white md:justify-self-end md:h-12 lg:h-[max(3vw,3rem)] md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]" placeholder="Name">
+        <input type="text" name="surname" class="zarobi text-plava text-sm placeholder:text-plava placeholder:text-sm  placeholder:font-main w-3/5 rounded-[6px] h-9 self-end p-3 mt-9 md:col-start-1 md:mt-0 md:bg-plava md:text-white md:placeholder:text-white md:justify-self-end md:h-12 lg:h-[max(3vw,3rem)] md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]" placeholder="surname">
+        
+
+        
         <input
-          required
+          required 
+          name="ime"
           type="text"
           placeholder="Full Name"
           class="text-plava text-sm placeholder:text-plava placeholder:text-sm  placeholder:font-main w-3/5 rounded-[6px] h-9 self-end p-3 mt-9 md:col-start-1 md:mt-0 md:bg-plava md:text-white md:placeholder:text-white md:justify-self-end md:h-12 lg:h-[max(3vw,3rem)] md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]" 
         /><input
           required
+          name="mail"
           type="email"
           placeholder="Email: example@gmail.com"
           class="text-plava text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-3/5 rounded-[6px] h-9 self-start p-3 md:col-start-1 md:bg-plava md:justify-self-end md:text-white md:placeholder:text-white md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         />
+        
         <div
           class="flex justify-between w-3/5 text-lg text-white font-main h-min md:col-start-1 md:justify-self-end md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         >
           <label class="md:text-plava md:self-center md:font-bold" for="from">From:</label>
-          <input
+          <input autocomplete="off"
+            name="from-date"
             type="date"
             id="from"
             class="text-plava lg:pl-4 w-[60%]  placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9 md:bg-plava md:text-white  md:placeholder:text-white md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
@@ -306,13 +316,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           class="flex justify-between w-3/5 text-lg text-white font-main h-min md:col-start-1 md:justify-self-end md:w-full md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
         >
           <label class="md:text-plava md:self-center md:font-bold"  for="to">To:</label>
-          <input
+          <input autocomplete="off"
+            name="to-date"
             type="date"
             id="to"
             class="text-plava w-[60%] lg:pl-4  placeholder:text-plava text-sm placeholder:font-main self-start rounded-[6px] h-9  md:bg-plava md:text-white md:placeholder:text-white md:h-12 lg:h-[max(3vw,3rem)] md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]"
           />
         </div>
-        <textarea
+        <textarea autocomplete="off"
+          name="message"
           type="text"
           placeholder="Message"
           class="text-plava resize-none lg:placeholder:text-[clamp(0.8rem,0.3rem+1vw,1.3rem)] font-main text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-4/5 rounded-[6px] h-36 self-start p-3 md:row-start-1 md:row-span-4 md:col-start-2 md:place-self-center md:h-full md:bg-plava md:text-white md:placeholder:text-white md:justify-self-start md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:p-5"
@@ -320,6 +332,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <button
           class="text-white font-main text-lg m-[1vh] p-[0.3rem_3rem] rounded-[15px] border-[3px] md:col-span-2 md:text-plava md:border-plava md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]  md:font-bold lg:p-[0.5rem_4rem] lg:mt-12"
           type="submit"
+          name="submit"
         >
           Send
         </button>
