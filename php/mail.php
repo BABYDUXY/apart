@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $ime_honey = $_POST['name'];
     $prezime_honey = $_POST['surname'];
 
-    if($ime_honey==""){
+    if($ime_honey=="" && $prezime_honey==""){
     
     $to = "david.guscic@gmail.com"; // kome se šalje
     $from = $_POST['mail']; // tko šalje
