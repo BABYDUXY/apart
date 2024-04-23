@@ -8,23 +8,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="css/output.css" rel="stylesheet" />
-
+    <meta
+      name="description"
+      content="Apartments on the island of Rab with an ideal position for anybody. With 2 bedrooms and a 4 person capacity."
+    />
+    <meta
+      name="keywords"
+      content="Apartments,Best Apartments on Rab, Close to sea, close to Town, 4 person, 2 bedroom , Rab, Croatia, Kvarner"
+    />
+    <meta name="author" content="David Gušćić" />
+    <title>Apartments Gušćić - Best Apartments on Rab</title>
+    
+<!-- Fontovi -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap"
       rel="stylesheet"
     />
+    <!-- css -->
+    <link href="css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+
+    <!-- javascript -->
 
     <script src="js/cookie.js"></script>
+    <script defer src="js/hamburger.js"></script>
 
-
+<!-- google mape -->
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHUGtI5gN9TycVCu0oom1MfDcLeZyUTlc&callback=console.debug&libraries=maps,marker&v=beta">
     </script>
     
-
+<!-- za slike -->
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js
 "></script>
@@ -35,11 +50,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       rel="stylesheet"
     />
 
-    <script defer src="js/hamburger.js"></script>
-    
 
-
-    <link rel="stylesheet" href="css/hamburger.css" />
   </head>
   <body>
     <!-- Za hamburger -->
@@ -55,10 +66,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <li><a class="menu__item" href="#contact_us">Contact</a></li>
 
         <span>
-          <img src="img/uk.png" onclick="language('Index')" alt="United kingdomn flag icon">
-          <img src="img/german.png" onclick="language('Deutsch')" alt="german flag icon">
-          <img src="img/italy.png" onclick="language('Italiano')" alt="Italia flag icon">
-          <img src="img/croatia.png" onclick="language('Hrvatski')" alt="Croatian flag icon">
+          <img src="img/uk.png" onclick="language('Index')" hreflang="en" alt="United kingdomn flag icon">
+          <img src="img/german.png" onclick="language('Deutsch')" hreflang="de" alt="german flag icon">
+          <img src="img/italy.png" onclick="language('Italiano')" hreflang="it" alt="Italia flag icon">
+          <img src="img/croatia.png" onclick="language('Hrvatski')" hreflang="hr" alt="Croatian flag icon">
         </span>
       </ul>
 
@@ -85,11 +96,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
             class="text-2xl font-main text-center h-[calc(100%-6rem)] grid items-center [&>*]:border-b-2 [&>*]:border-white [&>*]:w-[50%] [&>*]:transition-all [&>*:hover]:w-[60%] [&>*]:m-auto [&>*]:pb-1 [&>*]:text-white [&>#default]:border-white [&>#default]:text-white"
           >
             <li id="default">
-              <a onclick="language('Index')" href="">English</a>
+              <a onclick="language('Index')" hreflang="en">English</a>
             </li>
-            <li><a onclick="language('Deutsch')" href="">Deutsch</a></li>
-            <li><a onclick="language('Italiano')" href="">Italiano</a></li>
-            <li><a onclick="language('Hrvatski')" href="">Hrvatski</a></li>
+            <li><a onclick="language('Deutsch')" hreflang="de">Deutsch</a></li>
+            <li><a onclick="language('Italiano')" hreflang="it">Italiano</a></li>
+            <li><a onclick="language('Hrvatski')" hreflang="hr">Hrvatski</a></li>
           </ul>
         </div>
         <div
@@ -239,18 +250,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         >
           <p class="lg:hidden long_sm:pb-[2vh]">
             Apartments Gušćić are located in the ideal position within the
-            island of Rab. <section class="lg:hidden long_sm:pb-[3vh]">With stunning beaches in the close distance, the
+            island of <a class="underline " href="https://www.placesofjuma.com/rab-island-croatia/">Rab</a>. <section class="lg:hidden long_sm:pb-[3vh]">With stunning beaches in the close distance, the
             closest one being inside the 150 m range, and a 5 minute walk from
             the gorgeous old Town of Rab.</section>
           </p>
           <p class="hidden lg:block">
             Apartments Gušćić are located in the ideal position within the
-            island of Rab.
+            island of <a class="underline" href="https://www.placesofjuma.com/rab-island-croatia/">Rab</a>.
           </p>
           <br class="hidden lg:block">
           <p class="hidden lg:block">
-            With stunning beaches and a beautifull adriatic sea just 100 meters away, and a 5 minute walk from the gorgeous old
-            Town of Rab.
+            With stunning beaches and a beautifull adriatic sea just 100 meters away, and a 5 minute walk from the gorgeous <a  class="underline" href="https://en.wikipedia.org/wiki/Rab_(town)">old
+            Town of Rab</a>.
           </p>
           <br  />
           <p class="hidden lg:block">
@@ -332,7 +343,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           class="text-plava resize-none lg:placeholder:text-[clamp(0.8rem,0.3rem+1vw,1.3rem)] font-main text-sm placeholder:text-plava placeholder:text-sm placeholder:font-main w-4/5 rounded-[6px] h-36 self-start p-3 md:row-start-1 md:row-span-4 md:col-start-2 md:place-self-center md:h-full md:bg-plava md:text-white md:placeholder:text-white md:justify-self-start md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:p-5"
         ></textarea>
         <button
-          class="text-white font-main text-lg m-[1vh] p-[0.3rem_3rem] rounded-[15px] border-[3px] md:col-span-2 md:text-plava md:border-plava md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]  md:font-bold lg:p-[0.5rem_4rem] lg:mt-12"
+          class="text-white font-main text-lg m-[1vh] p-[0.3rem_3rem] rounded-[15px] border-[3px] md:col-span-2 md:text-plava md:border-plava md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]  md:font-bold lg:p-[0.5rem_4rem] lg:mt-12 hover:bg-plava hover:text-white transition-colors"
           type="submit"
           name="submit"
         >
