@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $full_name = $_POST['ime'];
     
     
-    $subject = "TESTIRANJE";
+    $subject = "Apartmani upit sa stranice";
     $message = $full_name . " želi rezervirati apartman od " . $_POST['from-date'] ." do ". $_POST['to-date'] . "\n piše sljedeće:\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
