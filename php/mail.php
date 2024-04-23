@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
       }
     }
     else{
-        echo "GRRRRRR";
+        header("Location: ../index.html");
     }
 }
 
