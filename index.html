@@ -18,6 +18,7 @@
     />
     <meta name="author" content="David Gušćić" />
     <title>Apartments Gušćić - Best Apartments on Rab</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     
 <!-- Fontovi -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,6 +54,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
 
   </head>
   <body>
+    <!-- za kolacice obavijest -->
+    <div id="cookies" class="w-full h-[10%] bg-plava fixed bottom-0 left-0 z-50"> <div class="flex justify-center w-full h-full text-xl text-white font-main"><p class="self-center ">This site uses cookies.</p><button  id="close_cookies" class="hover:cursor-pointer absolute right-0 self-center mr-[5%]  h-min z-[55]" onclick="hide('cookies')"><span class="x"></span></button> </div></div>
     <!-- Za hamburger -->
     <div class="hamburger-menu">
       <input id="menu__toggle" type="checkbox" />
@@ -93,7 +96,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
             Language
           </h3>
           <ul
-            class="text-2xl font-main text-center h-[calc(100%-6rem)] grid items-center [&>*]:border-b-2 [&>*]:border-white [&>*]:w-[50%] [&>*]:transition-all [&>*:hover]:w-[60%] [&>*]:m-auto [&>*]:pb-1 [&>*]:text-white [&>#default]:border-white [&>#default]:text-white"
+            class="text-2xl font-main text-center h-[calc(100%-6rem)] grid items-center [&>*]:hover:cursor-pointer [&>*]:border-b-2 [&>*]:border-white [&>*]:w-[50%] [&>*]:transition-all [&>*:hover]:w-[60%] [&>*]:m-auto [&>*]:pb-1 [&>*]:text-white [&>#default]:border-white [&>#default]:text-white"
           >
             <li id="default">
               <a onclick="language('Index')" hreflang="en">English</a>

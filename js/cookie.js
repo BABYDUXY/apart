@@ -47,3 +47,9 @@ function page(jezik) {
       break;
   }
 }
+
+// za micanje upozorenja o kolacicima
+function hide(id) {
+  const element = document.getElementById(id);
+  element.style.display = "none";
+}
