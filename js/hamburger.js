@@ -77,7 +77,7 @@ const observer_apart = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.3 }
+  { threshold: 0.1 }
 );
 
 const mediaQuery = window.matchMedia("(min-width: 768px)");
