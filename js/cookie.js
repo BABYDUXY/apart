@@ -22,6 +22,10 @@ function page(jezik) {
   let url = document.location.href;
   let check = url.match(jezik);
 
+  if (url == "https://apartmentsguscic.com/") {
+    check = "index";
+  }
+
   if (!check) {
     check = "nana";
   }
@@ -30,8 +34,8 @@ function page(jezik) {
     case check[0]:
       break;
 
-    case "Index":
-      document.location.href = "Index.html";
+    case "index":
+      document.location.href = "index.html";
       break;
     case "Deutsch":
       document.location.href = "Deutsch.html";
