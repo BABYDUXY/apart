@@ -16,6 +16,7 @@ module.exports = {
         long_sm: { raw: "(min-height:800px) or (orientation:landscape)" },
         xs: "530px",
         lg: "1025px",
+        short: { raw: "(max-height:700px)" },
       },
     },
   },
