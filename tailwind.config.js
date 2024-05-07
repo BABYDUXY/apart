@@ -17,6 +17,7 @@ module.exports = {
         xs: "530px",
         lg: "1025px",
         short: { raw: "(max-height:700px)" },
+        ultra_short: { raw: "(max-height:640px)" },
       },
     },
   },
