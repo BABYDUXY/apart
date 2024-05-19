@@ -14,7 +14,7 @@
     />
     <meta
       name="keywords"
-      content="Apartmani, Najbolji, jeftini , Apartmani na otoku Rabu, uz more, blizu grada, 4 osobe, 2 sobe , Rab, Hrvatska, Kvarner"
+      content="Apartmani, Guscic, Najbolji, jeftini , Apartmani na otoku Rabu, uz more, blizu grada, 4 osobe, 2 sobe , Rab, Hrvatska, Kvarner"
     />
     <meta name="author" content="David Gušćić" />
     <title>Apartmani Gušćić - Najbolji apartmani na otoku Rabu</title>
@@ -57,7 +57,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     <!-- za kolacice obavijest -->
     <div id="cookies" class="w-full h-[10%] bg-plava fixed bottom-0 left-0 z-50"> <div class="flex justify-center w-full h-full text-xl text-white font-main"><p class="self-center ">Ova stranica koristi kolačiće.</p><button title="zatvori kolacice"  id="close_cookies" class="hover:cursor-pointer absolute right-0 self-center mr-[5%]  h-min z-[55]" onclick="hide('cookies')"><span class="x"></span></button> </div></div>
     <!-- Za hamburger -->
-    <div class="hamburger-menu">
+    <nav class="hamburger-menu">
       <input id="menu__toggle" type="checkbox" />
       <label class="menu__btn" for="menu__toggle">
         <span class="md:!bg-plava"></span>
@@ -77,11 +77,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       </ul>
 
       
-    </div>
+    </nav>
 
     <!-- GOTOVO -->
     <!-- MAIN page----------------------------- -->
-    <div
+    <section
       id="main_page"
       class="relative flex items-center justify-center w-full overflow-hidden bg-black h-svh snap-start snap-always"
     >
@@ -156,9 +156,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           </svg>
         </div>
       </div>
-    </div>
+    </section>
     <!-- APARTMANI--------------------------------------------------------------- -->
-    <div
+    <section
       id="white_div_apt"
       class="h-svh md:h-auto w-full grid grid-cols-[10%_80%_10%] justify-items-center grid-rows-[repeat(5,auto);] snap-start snap-always lg:grid-cols-[10%_40%_40%_10%] md:mt-[3vh]"
     >
@@ -251,9 +251,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           <img class="w-7" src="img/check.png" alt="Check logo" />
         </li>
       </ul>
-    </div>
+    </section>
     <!-- Lokacija ------------------------------------------------------------------- -->
-    <div
+    <section
       class="md:relative md:grid md:grid-cols-[10%_55%_25%_10%] lg:grid-cols-[15%_45%_25%_15%] md:mt-[10vh]"
     >
       <div
@@ -294,9 +294,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           Adresa : Palit 232, Rab
         </p>
       </div>
-    </div>
+    </section>
     <!-- Obrazac --------------------------------------------------------------------- -->
-    <div
+    <section
       id="contact_us"
       class="h-screen w-full grid grid-cols-[10%_1fr_10%] lg:grid-cols-[20%_1fr_20%] justify-items-center grid-rows-[repeat(3,1fr);] md:grid-rows-[repeat(5,1fr);] snap-start snap-always md:mt-[10vh] md:h-[calc(100vh/2)] "
     >
@@ -378,7 +378,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           &COPY; David Gušćić | Sva prava pridržana
         </p>
       </footer>
-    </div>
+    </section>
     <script>
       new Splide("#image-slider").mount();
     </script>
