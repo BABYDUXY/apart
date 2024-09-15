@@ -152,6 +152,9 @@ transition: all 100ms ease-in;
   #image-slider{animation:   800ms   alternate forwards;
 }
 
+#image-slider2{animation:   800ms   alternate forwards;
+}
+
 #short_text{animation:  800ms   alternate forwards;
   animation-delay: 500ms;
 }
