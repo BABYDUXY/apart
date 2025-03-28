@@ -947,6 +947,10 @@ video {
   border-radius: 6px;
 }
 
+.rounded-\[2vw\] {
+  border-radius: 2vw;
+}
+
 .rounded-e-\[2vw\] {
   border-start-end-radius: 2vw;
   border-end-end-radius: 2vw;
@@ -1029,6 +1033,10 @@ video {
 
 .pt-\[4vh\] {
   padding-top: 4vh;
+}
+
+.pb-\[1vh\] {
+  padding-bottom: 1vh;
 }
 
 .text-center {
@@ -1260,6 +1268,10 @@ video {
     margin-top: 3vh;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -1459,24 +1471,28 @@ video {
 }
 
 @media (min-width: 1025px) {
-  .lg\:col-span-1 {
-    grid-column: span 1 / span 1;
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
-  .lg\:col-start-2 {
-    grid-column-start: 2;
+  .lg\:\!col-start-1 {
+    grid-column-start: 1 !important;
   }
 
   .lg\:col-start-1 {
     grid-column-start: 1;
   }
 
-  .lg\:col-start-\[\!1\] {
-    grid-column-start: !1;
+  .lg\:col-start-2 {
+    grid-column-start: 2;
   }
 
-  .lg\:\!col-start-1 {
-    grid-column-start: 1 !important;
+  .lg\:\!col-start-2 {
+    grid-column-start: 2 !important;
+  }
+
+  .lg\:\!col-end-2 {
+    grid-column-end: 2 !important;
   }
 
   .lg\:col-end-3 {
@@ -1487,36 +1503,36 @@ video {
     grid-column-end: 4;
   }
 
-  .lg\:col-end-2 {
-    grid-column-end: 2;
+  .lg\:row-span-4 {
+    grid-row: span 4 / span 4;
   }
 
-  .lg\:col-end-1 {
-    grid-column-end: 1;
+  .lg\:row-span-7 {
+    grid-row: span 7 / span 7;
   }
 
-  .lg\:col-end-\[\!2\] {
-    grid-column-end: !2;
+  .lg\:row-span-3 {
+    grid-row: span 3 / span 3;
   }
 
-  .lg\:\!col-end-\[2\] {
-    grid-column-end: 2 !important;
+  .lg\:row-span-1 {
+    grid-row: span 1 / span 1;
   }
 
-  .lg\:\!col-end-2 {
-    grid-column-end: 2 !important;
-  }
-
-  .lg\:row-start-1 {
-    grid-row-start: 1;
+  .lg\:row-span-2 {
+    grid-row: span 2 / span 2;
   }
 
   .lg\:row-start-2 {
     grid-row-start: 2;
   }
 
-  .lg\:row-end-2 {
-    grid-row-end: 2;
+  .lg\:row-start-3 {
+    grid-row-start: 3;
+  }
+
+  .lg\:row-start-4 {
+    grid-row-start: 4;
   }
 
   .lg\:mb-\[5vh\] {
@@ -1551,16 +1567,37 @@ video {
     height: max(3vw,3rem);
   }
 
-  .lg\:h-\[10\%\] {
-    height: 10%;
-  }
-
-  .lg\:h-\[50\%\] {
-    height: 50%;
+  .lg\:h-min {
+    height: -moz-min-content;
+    height: min-content;
   }
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:h-\[30vh\] {
+    height: 30vh;
+  }
+
+  .lg\:h-\[70vh\] {
+    height: 70vh;
+  }
+
+  .lg\:h-\[60vh\] {
+    height: 60vh;
+  }
+
+  .lg\:h-\[65vh\] {
+    height: 65vh;
+  }
+
+  .lg\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .lg\:h-\[min\(calc\(100\%-3rem\)\2c calc\(100\%-2vh\)\)\] {
+    height: min(calc(100% - 3rem),calc(100% - 2vh));
   }
 
   .lg\:w-\[50vw\] {
@@ -1575,8 +1612,28 @@ video {
     width: 100%;
   }
 
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .lg\:w-\[75\%\] {
+    width: 75%;
+  }
+
   .lg\:grid-cols-\[10\%_40\%_40\%_10\%\] {
     grid-template-columns: 10% 40% 40% 10%;
+  }
+
+  .lg\:grid-cols-\[10\%_80\%_10\%\] {
+    grid-template-columns: 10% 80% 10%;
   }
 
   .lg\:grid-cols-\[15\%_45\%_25\%_15\%\] {
@@ -1587,44 +1644,36 @@ video {
     grid-template-columns: 20% 1fr 20%;
   }
 
-  .lg\:grid-cols-\[10\%_80\%_10\%\] {
-    grid-template-columns: 10% 80% 10%;
-  }
-
   .lg\:grid-cols-\[50\%_50\%\] {
     grid-template-columns: 50% 50%;
   }
 
-  .lg\:grid-rows-\[repeat\(3\2c auto\)\] {
-    grid-template-rows: repeat(3,auto);
-  }
-
-  .lg\:grid-rows-\[repeat\(3\2c auto\)\;\] {
-    grid-template-rows: repeat(3,auto);;
-  }
-
-  .lg\:grid-rows-\[repeat\(2\2c auto\)\;\] {
-    grid-template-rows: repeat(2,auto);;
-  }
-
-  .lg\:grid-rows-\[repeat\(2\2c 1fr\)\;\] {
-    grid-template-rows: repeat(2,1fr);;
-  }
-
-  .lg\:grid-rows-\[1fr_auto\] {
-    grid-template-rows: 1fr auto;
-  }
-
-  .lg\:grid-rows-\[repeat\(3\2c 1fr\)\;\] {
-    grid-template-rows: repeat(3,1fr);;
+  .lg\:grid-rows-\[repeat\(4\2c 1fr\)\;\] {
+    grid-template-rows: repeat(4,1fr);;
   }
 
   .lg\:gap-8 {
     gap: 2rem;
   }
 
+  .lg\:self-center {
+    align-self: center;
+  }
+
+  .lg\:rounded-\[2vw\] {
+    border-radius: 2vw;
+  }
+
   .lg\:p-\[0\.5rem_4rem\] {
     padding: 0.5rem 4rem;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .lg\:\!p-10 {
+    padding: 2.5rem !important;
   }
 
   .lg\:pb-\[20\%\] {
@@ -1633,6 +1682,14 @@ video {
 
   .lg\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-center {
+    text-align: center;
   }
 
   .lg\:text-8xl {

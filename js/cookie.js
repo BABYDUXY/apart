@@ -16,6 +16,12 @@ function reload() {
     document.querySelector("body").style.overflow = "auto";
     page(jezik);
   }
+
+  /* Dio za micanje obavijesti o kolacicima */
+  let prihvaceniKolacici = localStorage["cookies"];
+  if (prihvaceniKolacici == "accepted") {
+    hide("cookies");
+  }
 }
 
 function page(jezik) {
@@ -56,4 +62,10 @@ function page(jezik) {
 function hide(id) {
   const element = document.getElementById(id);
   element.style.display = "none";
+}
+
+function acceptedCookies() {
+  localStorage["cookies"] = "accepted";
+
+  hide("cookies");
 }

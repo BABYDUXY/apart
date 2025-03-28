@@ -55,7 +55,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
   </head>
   <body>
     <!-- za kolacice obavijest -->
-    <div id="cookies" class="w-full h-[10%] bg-plava fixed bottom-0 left-0 z-50"> <div class="flex justify-center w-full h-full text-xl text-white font-main"><p class="self-center ">This site uses cookies.</p><button title="close cookies"  id="close_cookies" class="hover:cursor-pointer absolute right-0 self-center mr-[5%]  h-min z-[55]" onclick="hide('cookies')"><span class="x"></span></button> </div></div>
+    <div id="cookies" class="w-full h-[10%] bg-plava fixed bottom-0 left-0 z-50"> <div class="flex justify-center w-full h-full text-xl text-white font-main"><p class="self-center ">This site uses cookies.</p><button title="close cookies"  id="close_cookies" class="hover:cursor-pointer absolute right-0 self-center mr-[5%]  h-min z-[55]" onclick="acceptedCookies()"><span class="x"></span></button> </div></div>
     <!-- Za hamburger -->
     <nav class="hamburger-menu">
       <input id="menu__toggle" type="checkbox" />
@@ -296,32 +296,35 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     <!-- RENT A SUP -------------------------------------------- -->
      <div class="lg:w-full lg:grid lg:grid-cols-[10%_80%_10%]">
     <section
-    class=" bg-plava md:mt-[3vh] md:h-auto lg:col-start-2"
+    class=" bg-plava md:mt-[3vh] md:h-auto lg:col-start-2 lg:rounded-[2vw]"
   >
     <div
       id="rentasup"
-      class="h-svh w-full grid grid-cols-[10%_1fr_10%] lg:grid-cols-[50%_50%] justify-items-center grid-rows-[repeat(7,1fr);] snap-start snap-always "
+      class="h-svh lg:h-[80vh] md:[h-60vh] w-full grid grid-cols-[10%_1fr_10%] lg:grid-cols-[50%_50%] justify-items-center grid-rows-[repeat(7,1fr);] snap-start snap-always "
     >
-    <div class="flex flex-col items-center content-center justify-center col-start-2 border-white lg:col-start-1 border-x-2 ">
+    <div class="flex flex-col items-center content-center justify-center col-start-2 border-white lg:col-start-1 border-x-2 lg:col-span-2">
       <h3
-        class="font-main text-white text-4xl font-bold p-[5vh_5vh_0vh_5vh] col-start-2 self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)]"
+        class=" font-main text-white text-4xl font-bold p-[5vh_5vh_0vh_5vh] col-start-2 self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)]"
       >
         Rent a SUP
       </h3>
       <h5 class="col-start-2 row-start-2 text-lg font-semibold text-white font-main">Great Price</h5>
     </div>
       <div
-        class="font-main text-white text-[1.1rem] col-start-2 row-start-3 w-full m-auto md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] lg:row-start-2 "
+        class="font-main text-white text-[1.1rem] col-start-2 row-start-3 w-full m-auto md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] lg:row-start-3 lg:col-start-1  lg:text-left lg:w-[75%] lg:row-span-3"
       >
         <p class="pb-[2vh]">
           Explore the stunning coastline of Rab, accessing hidden beaches and crystal-clear waters that are only reachable by paddleboard. <p class=" pb-[3vh]"> It's the perfect way to experience the island's beauty, whether you're seeking adventure or relaxation.</p>
+          <p class="hidden pb-[3vh] md:block"> We are offering 3 diffrent options with various discounts depending on time and quantity.</p>
+          <p class=" hidden pb-[3vh] md:block"> if you are interested, <br><b> Just mention it when renting an apartment.</b></p>
+          
         </p>
         
       </div>
 
       <div
       id="image-slider2"
-      class="z-20 col-start-1 col-end-4 row-start-4 shadow-xl splide xs:col-start-2 xs:col-end-3 h-max lg:!col-start-1 lg:!col-end-2 lg:row-start-2"
+      class="z-20 col-start-1 col-end-4 row-start-4 shadow-xl splide xs:col-start-2 xs:col-end-3 h-max lg:row-start-3 lg:!col-start-2 lg:w-[90%] lg:row-span-7"
     >
       <div class="splide__track h-[40vh] md:h-[min(30rem,100%)]">
         <ul class="splide__list">
@@ -396,8 +399,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     </div>
   </section>
   <!-- BOAT RIDE -------------------------------------------- -->
-  <section
-    class="md:relative md:grid md:grid-cols-[10%_55%_25%_10%] lg:grid-cols-[15%_45%_25%_15%] md:mt-[10vh]"
+  <!-- <section
+    class="md:relative md:grid md:grid-cols-[10%_55%_25%_10%] lg:grid-cols-[15%_45%_25%_15%] md:mt-[10vh] "
   >
     <div
       id="boatride"
@@ -509,7 +512,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
 
       
     </div>
-  </section>
+  </section> -->
 </div>
     <!-- Lokacija ------------------------------------------------------------------- -->
     <section

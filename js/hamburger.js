@@ -31,7 +31,7 @@ const elements = [];
 const main = document.getElementById("main_page");
 const apt = document.getElementById("white_div_apt");
 const rentasup = document.getElementById("rentasup");
-const boatride = document.getElementById("boatride");
+/* const boatride = document.getElementById("boatride"); */
 const obrazac = document.getElementById("contact_us");
 const lokacija = document.getElementById("location");
 const hamburger = document.querySelector(".menu__btn > span");
@@ -47,7 +47,7 @@ addEventListener("scroll", (event) => {
   paintBlue(apt, hamburger);
   paintWhite(lokacija, hamburger);
   paintWhite(rentasup, hamburger);
-  paintBlue(boatride, hamburger);
+  /* paintBlue(boatride, hamburger); */
   paintBlue(obrazac, hamburger);
   RemoveIfOnScreen(main, hamburger);
 });
