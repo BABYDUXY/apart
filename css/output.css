@@ -746,18 +746,6 @@ video {
   height: 100svh;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-\[1080px\] {
-  height: 1080px;
-}
-
 .min-h-56 {
   min-height: 14rem;
 }
@@ -809,6 +797,10 @@ video {
 .w-min {
   width: -moz-min-content;
   width: min-content;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .basis-\[15ch\] {
@@ -937,10 +929,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-clip {
-  overflow: clip;
 }
 
 .scroll-smooth {
@@ -1258,21 +1246,6 @@ video {
 
   .md\:row-start-1 {
     grid-row-start: 1;
-  }
-
-  .md\:mx-\[5vh\] {
-    margin-left: 5vh;
-    margin-right: 5vh;
-  }
-
-  .md\:mx-\[10vh\] {
-    margin-left: 10vh;
-    margin-right: 10vh;
-  }
-
-  .md\:my-\[10vh\] {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
   }
 
   .md\:my-\[15vh\] {
@@ -1642,6 +1615,18 @@ video {
 
   .lg\:placeholder\:text-\[clamp\(0\.8rem\2c 0\.3rem\+1vw\2c 1\.3rem\)\]::placeholder {
     font-size: clamp(0.8rem,0.3rem + 1vw,1.3rem);
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-\[90\%\] {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-\[90\%\] {
+    width: 90%;
   }
 }
 

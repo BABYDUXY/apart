@@ -114,13 +114,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         reload();
       </script>
       <video
-        class="absolute object-cover h-[150svh] m-auto z-0 opacity-60"
-        autoplay
-        muted
-        loop
-      >
-        <source src="img/drone_edited.mov" type="video/mp4" />
-      </video>
+  id="heroVideo"
+  class="absolute object-cover h-[150svh] w-full m-auto z-0 opacity-60"
+  muted
+  loop
+  playsinline
+  webkit-playsinline
+  preload="auto"
+  poster="img/poster_videa.jpg"
+>
+  <source src="img/drone_footage.mp4" type="video/mp4" />
+</video>
 
       <div
         class="z-10 flex flex-col min-h-[100svh] justify-evenly items-center"
@@ -612,6 +616,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       new Splide("#image-slider2").mount();
       new Splide("#image-slider3").mount();
     </script>
-    
+    <script src="js/hero_video.js" defer></script>
   </body>
 </html>
