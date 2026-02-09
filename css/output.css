@@ -664,6 +664,10 @@ video {
   margin-top: 5vh;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -746,6 +750,10 @@ video {
   height: 100svh;
 }
 
+.h-\[100svh\] {
+  height: 100svh;
+}
+
 .min-h-56 {
   min-height: 14rem;
 }
@@ -821,6 +829,10 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .resize-none {
@@ -1542,6 +1554,10 @@ video {
 
   .lg\:h-\[max\(3vw\2c 3rem\)\] {
     height: max(3vw,3rem);
+  }
+
+  .lg\:h-\[150svh\] {
+    height: 150svh;
   }
 
   .lg\:w-\[50vw\] {
