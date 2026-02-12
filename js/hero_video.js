@@ -42,7 +42,8 @@ const observer = new IntersectionObserver(
       hasPlayedOnce = false;
     }
   },
-  { threshold: 0.2 }
+  { threshold: 0.2 },
 );
 
 observer.observe(video);
+/* ZA SCROLLANJE NA SUPOVIMA */

@@ -19,6 +19,20 @@ module.exports = {
         short: { raw: "(max-height:700px)" },
         ultra_short: { raw: "(max-height:640px)" },
       },
+      keyframes: {
+        swipeX: {
+          "0%, 100%": { transform: "translateX(0px)" },
+          "50%": { transform: "translateX(-50px)" },
+        },
+        swipeX2: {
+          "0%, 100%": { transform: "translateX(0px)" },
+          "50%": { transform: "translateX(-30px)" },
+        },
+      },
+      animation: {
+        swipeX: "swipeX 2s ease-in-out infinite",
+        swipeX2: "swipeX2 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

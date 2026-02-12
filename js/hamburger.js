@@ -1,3 +1,4 @@
+let isSupScrolled = false;
 const paintBlue = (el, change) => {
   const { top, left, bottom, right } = el.getBoundingClientRect();
   const { innerHeight, innerWidth } = window;
@@ -36,6 +37,8 @@ const obrazac = document.getElementById("contact_us");
 const lokacija = document.getElementById("location");
 const hamburger = document.querySelector(".menu__btn > span");
 const toggler = document.getElementById("menu__toggle");
+const horizontalniSup = document.getElementById("horizontalniSup");
+const priceMenu = document.getElementById("priceMenu");
 
 addEventListener("DOMContentLoaded", (event) => {
   paintBlue(apt, hamburger);
@@ -46,10 +49,25 @@ addEventListener("DOMContentLoaded", (event) => {
 addEventListener("scroll", (event) => {
   paintBlue(apt, hamburger);
   paintWhite(lokacija, hamburger);
-  paintWhite(rentasup, hamburger);
+  isSupScrolled
+    ? paintBlue(priceMenu, hamburger)
+    : paintWhite(rentasup, hamburger);
+
   /* paintBlue(boatride, hamburger); */
   paintBlue(obrazac, hamburger);
   RemoveIfOnScreen(main, hamburger);
+});
+
+horizontalniSup.addEventListener("scroll", () => {
+  // Horizontalni scroll unutar sekcije
+  const scroll = horizontalniSup.scrollLeft;
+  if (scroll > 20) {
+    paintBlue(priceMenu, hamburger);
+    isSupScrolled = true;
+  } else {
+    paintWhite(priceMenu, hamburger);
+    isSupScrolled = false;
+  }
 });
 
 // Postavljanje animacija
@@ -68,7 +86,7 @@ const observer_location = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0 }
+  { threshold: 0 },
 );
 
 const observer_apart = new IntersectionObserver(
@@ -81,7 +99,7 @@ const observer_apart = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.1 }
+  { threshold: 0.1 },
 );
 
 const mediaQuery = window.matchMedia("(min-width: 768px)");
