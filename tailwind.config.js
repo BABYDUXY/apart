@@ -28,10 +28,24 @@ module.exports = {
           "0%, 100%": { transform: "translateX(0px)" },
           "50%": { transform: "translateX(-30px)" },
         },
+        wave: {
+          "0%": { transform: "translateX(0) " },
+          "50%": { transform: "translateX(-40%) " },
+          "100%": { transform: "translateX(0) " },
+        },
+        waveBob: {
+          "0%": { transform: "translateY(0px)" },
+
+          "50%": { transform: "translateY(10px)" },
+
+          "100%": { transform: "translateY(0px)" },
+        },
       },
       animation: {
         swipeX: "swipeX 2s ease-in-out infinite",
         swipeX2: "swipeX2 2s ease-in-out infinite",
+        wave: "wave 10s  ease-in-out infinite",
+        waveBob: "waveBob 4s ease-in-out infinite",
       },
     },
   },

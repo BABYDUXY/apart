@@ -333,9 +333,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
 
       <div
       id="image-slider2"
-      class="z-20 col-start-1 col-end-4 row-start-4 shadow-xl splide xs:col-start-2 xs:col-end-3 h-max lg:row-start-3 lg:!col-start-2 lg:w-[90%] lg:row-span-7"
+      class="z-20 col-start-1 short:h-[35svh] h-[40svh] overflow-hidden col-end-4 row-start-4 shadow-xl splide xs:col-start-2 xs:col-end-3 md:h-max lg:row-start-3 lg:!col-start-2 lg:w-[90%] lg:row-span-7"
     >
-      <div class="splide__track h-[40vh] md:h-[min(30rem,100%)] ">
+      <div class="splide__track  short:h-[120%] short:translate-y-[-7%] h-full md:h-[min(30rem,100%)] ">
         <ul class=" splide__list">
           <li class="object-cover splide__slide">
             <figure class="object-cover h-full ">
@@ -362,12 +362,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       </div>
     </div>
     <div class="flex items-center content-center w-full h-auto col-span-1 col-start-2 row-span-3 row-start-5 lg:hidden"><div class="flex items-center justify-center w-full h-full gap-4 translate-x-3">
-      <img class="h-[40px] animate-swipeX"  src="img/swipe-strelica.svg" alt="Swipe animation"><p class="font-main text-[1.8rem] animate-swipeX2   text-white font-thin">Swipe</p></div>
+      <img class="h-[3vh] animate-swipeX"  src="img/swipe-strelica.svg" alt="Swipe animation"><p class="font-main text-[1.6rem] animate-swipeX2   text-white font-thin">Swipe</p></div>
 </div>
     </div>
-    <div id="priceMenu" class=" lg:hidden snap-start z-[54] absolute top-0 left-0 w-full h-full bg-white   overflow-y-hidden translate-x-full transition-transform duration-300 grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);]">
+    <!-- Menu For SUP-s -->
+    <div id="priceMenu" class=" lg:hidden snap-start z-[54] absolute top-0 left-0 w-full h-full bg-white   overflow-hidden translate-x-full transition-transform duration-300 grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);]">
       <h3 class="font-main text-center col-start-2 text-plava text-4xl font-bold p-[5vh_5vh_0vh_5vh] md:text-[clamp(1.6rem,1.2rem+1vw,3rem)]">Price menu</h3>
-      <div class="w-full h-full col-start-2 row-span-4 row-start-2 "> 
+      <div class="w-full h-full col-start-2 row-span-3 row-start-2 "> 
         <table class="w-full font-semibold text-center border-collapse text-plava font-main ">
   <thead class="border-b-2 rounded-full border-plava text-[1.2rem]">
     
@@ -417,6 +418,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     </tr>
   </tbody>
 </table>
+
+</div>
+<div class="relative bottom-0 flex items-center justify-center h-full col-span-3 col-start-1 row-span-3  w-[120%]">
+  <div class="w-[170%] z-0 animate-wave  absolute bottom-0 short:-bottom-[5vh] left-0 ">
+    <img class="w-full animate-waveBob"  src="img/wave.svg" alt="Wave">
+  </div>
+  <img class="w-[40px]  rotate-90 "  src="img/swipe-strelica.svg" alt="Wave">
 </div>
     </div>
   </section>
