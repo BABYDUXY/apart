@@ -1,3 +1,230 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .force-scrollbar {
+    /* Standard properties for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #2c6585 #f3f4f6; /* Thumb (plava) and Track (gray-100) */
+  }
+
+  /* Webkit properties for Chrome/Safari/Edge */
+  .force-scrollbar::-webkit-scrollbar {
+    display: block !important;
+    width: 8px;
+    height: 8px;
+  }
+
+  .force-scrollbar::-webkit-scrollbar-track {
+    background: #f3f4f6; /* gray-100 */
+    border-radius: 10px;
+  }
+
+  .force-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #2c6585; /* your plava color */
+    border-radius: 10px;
+    border: 2px solid #f3f4f6;
+  }
+}
+
+#menu__toggle {
+  opacity: 0;
+  position: fixed;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+  background-color: #2c6585;
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: #2c6585;
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+.menu__btn {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  position: fixed;
+  top: 6vh;
+  right: 3vh;
+  z-index: 100;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 26px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition-duration: 0.25s;
+}
+@media (min-width: 768px) {
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    background-color: #2c6585;
+  }
+}
+
+.druga,
+.druga::after,
+.druga::before {
+  background-color: #2c6585 !important;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  z-index: 55;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #2c6585;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+
+.menu__box span > * {
+  width: 30px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+.menu__box span > *:hover,
+.menu__box span > *:focus {
+  scale: 1.1;
+}
+
+.menu__box span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  gap: 5%;
+}
+
+/* Animacije */
+
+@media (min-width: 768px) {
+  @keyframes slika {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes appearing {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes map_scroll {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes location_scroll {
+    to {
+      height: clamp(15rem, 1rem + 50vw, 50rem);
+    }
+  }
+
+  #image-slider {
+    animation: 800ms alternate forwards;
+  }
+
+  #image-slider2 {
+    animation: 800ms alternate forwards;
+  }
+
+  #short_text {
+    animation: 800ms alternate forwards;
+    animation-delay: 500ms;
+  }
+
+  .appearing {
+    animation: 300ms alternate forwards;
+    animation-delay: 1000ms;
+  }
+
+  #location {
+    animation: 1000ms alternate forwards;
+    animation-delay: 300ms;
+  }
+
+  .mapa {
+    animation: 1000ms alternate forwards;
+    animation-delay: 400ms;
+  }
+}
+
+.zarobi {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+
+/* za x za cookies */
+.x::before,
+.x::after {
+  content: "";
+  display: block;
+  margin-top: -3px;
+  width: 20px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.x::before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.x::after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

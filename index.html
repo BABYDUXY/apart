@@ -29,7 +29,7 @@
     />
     <!-- css -->
     <link href="css/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/hamburger.css" />
+    
 
     <!-- javascript -->
 
@@ -368,60 +368,92 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     <!-- Menu For SUP-s -->
     <div id="priceMenu" class=" lg:hidden snap-start z-[54] absolute top-0 left-0 w-full h-full bg-white   overflow-hidden translate-x-full transition-transform duration-300 grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);]">
       <h3 class="font-main text-center col-start-2 text-plava text-4xl font-bold p-[5vh_5vh_0vh_5vh] md:text-[clamp(1.6rem,1.2rem+1vw,3rem)]">Price menu</h3>
-      <div class="w-full h-full col-start-2 row-span-3 row-start-2 "> 
-        <table class="w-full font-semibold text-center border-collapse text-plava font-main ">
-  <thead class="border-b-2 rounded-full border-plava text-[1.2rem]">
+      <div class="w-full h-full col-start-2 row-span-5 row-start-2 overflow-y-scroll scrollbar force-scrollbar scrollbar-thumb-plava scrollbar-track-gray-200 "> 
+        <!-- KONTEJNER SA KARTICAMA SA CIJENAMA -->
+        <div class="grid grid-cols-1 gap-6 p-4 md:grid-cols-3 font-main text-plava">
+  
+  <div class="flex flex-col items-center p-6 bg-white border-2 shadow-sm border-plava/20 rounded-2xl">
+    <img src="img/sup/1supV3.png" alt="1 SUP" class="h-20 mb-4">
+    <h3 class="mb-4 text-2xl font-bold">1 SUP</h3>
+    <div class="w-full space-y-4">
+      <div class="flex items-center justify-between pb-2 border-b">
+        <span>1 Day</span>
+        <span class="text-xl font-bold">€40</span>
+      </div>
+      <div class="flex items-center justify-between pb-2 border-b">
+        <span>3 Days</span>
+        <span class="text-xl font-bold">€100</span>
+      </div>
+      <div class="flex items-center justify-between">
+        <span>7 Days</span>
+        <span class="text-xl font-bold text-red-500">€200</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center p-6 bg-white border-2 shadow-sm border-plava/20 rounded-2xl">
+    <img src="img/sup/2supV3.png" alt="2 SUPs" class="h-20 mb-4">
+    <h3 class="mb-4 text-2xl font-bold">2 SUPs</h3>
+    <div class="w-full space-y-4">
+      <div class="flex items-center justify-between pb-2 border-b">
+        <span>1 Day</span>
+        <span class="text-xl font-bold">€60</span>
+      </div>
+      <div class="flex items-center justify-between pb-2 text-blue-600 border-b">
+        <span>3 Days</span>
+        <div class="text-right">
+            <span class="block text-xl font-bold">€150</span>
+            <span class="text-xs italic leading-none">€25 / board / day</span>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <span>7 Days</span>
+        <div class="text-right">
+            <span class="block text-xl font-bold">€280</span>
+            <span class="text-xs font-semibold text-green-600">Save €280!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative border-4 border-plava rounded-2xl p-6 flex flex-col items-center bg-gradient-to-b from-plava to-[#1a3d52] text-white shadow-xl transform md:scale-105">
+    <div class="absolute px-4 py-1 text-sm font-black tracking-widest uppercase bg-yellow-400 rounded-full shadow-md -top-4 text-plava">
+        Best Value
+    </div>
+    <img src="img/sup/3supV3.png" alt="3 SUPs" class="h-20 mb-4 brightness-0 invert">
+    <h3 class="mb-4 text-2xl font-black">3 SUPs</h3>
     
+    <div class="w-full space-y-4">
+      <div class="flex items-center justify-between pb-2 border-b border-white/20">
+        <span>1 Day</span>
+        <span class="text-xl font-bold">€80</span>
+      </div>
+      <div class="flex items-center justify-between pb-2 border-b border-white/20">
+        <span>3 Days</span>
+        <div class="text-right">
+            <span class="block text-xl font-bold">€190</span>
+            <span class="text-xs opacity-80">€21 / board / day</span>
+        </div>
+      </div>
+      
+      <div class="flex items-center justify-between pt-2">
+        <span class="font-bold">7 Days</span>
+        <div class="text-right">
+            <span class="block text-sm line-through opacity-60">€840</span>
+            <span class="block text-3xl font-black text-yellow-400">€360</span>
+            <span class="text-xs font-bold bg-green-500 px-2 py-0.5 rounded italic">Save €480!</span>
+        </div>
+      </div>
+    </div>
+    <p class="mt-4 text-[0.7rem] text-center opacity-70">Perfect for families & groups</p>
+  </div>
 
-    <!-- Column headers -->
-    <tr>
-      <th ></th>
-
-      <th class="pb-2">
-        <img src="img/sup/1supV3.png" alt="SUP 1" class="mb-4">
-        <span class="font-bold">1 SUP</span>
-        
-      </th>
-
-      <th class="pb-3">
-        <img src="img/sup/2supV3.png" alt="SUP 2" class="mb-3">
-        <span class="font-bold">2 SUP's</span>
-      </th>
-
-      <th class="pb-3">
-        <img src="img/sup/3supV3.png" alt="SUP 3" class="mb-3">
-        <span class="font-bold">3 SUP's</span>
-      </th>
-    </tr>
-  </thead>
-
-  <tbody class=" text-[1.1rem] ">
-    <tr class="[&>td]:py-3">
-      <td class="font-bold text-[1.2rem]">1 Day</td>
-      <td class=" bg-plava bg-opacity-15">€5</td>
-      <td class=" bg-plava bg-opacity-40">€5</td>
-      <td class="text-white bg-plava bg-opacity-60">€5</td>
-    </tr>
-
-    <tr class="[&>td]:py-3">
-      <td class="font-bold text-[1.2rem]">3 Days</td>
-      <td class=" bg-plava bg-opacity-15">€12</td>
-      <td class=" bg-plava bg-opacity-40">€12</td>
-      <td class="text-white bg-plava bg-opacity-60" >€12</td>
-    </tr>
-
-    <tr class="[&>td]:py-3">
-      <td class="font-bold text-[1.2rem]">7 Days</td>
-      <td class=" bg-plava bg-opacity-15">€25</td>
-      <td class=" bg-plava bg-opacity-40">€25</td>
-      <td class="text-white bg-plava bg-opacity-60">€25</td>
-    </tr>
-  </tbody>
-</table>
+  </div>
 
 </div>
-<div class="relative bottom-0 flex items-end justify-center h-full col-span-3 col-start-1 row-span-3  w-[120%]">
-  <div class="w-[170%] z-0 animate-wave  absolute bottom-0 short:-bottom-[5vh] left-0 ">
+<!-- Val i swipe -->
+<div class="relative bottom-0  !bg-red-400 flex items-end justify-center h-full col-span-3 col-start-1 row-span-2  w-[120%]">
+  <div class="w-[170%] z-6 animate-wave  absolute bottom-0 short:-bottom-[5vh] left-0 ">
     <img class="w-full animate-waveBob"  src="img/wave.svg" alt="Wave">
   </div>
   <div class="mb-[2svh]">
