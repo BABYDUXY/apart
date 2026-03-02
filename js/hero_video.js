@@ -1,26 +1,47 @@
 const video = document.getElementById("heroVideo");
 
 let hasPlayedOnce = false;
+
+/* Scrollanje pritiskom na strelicu */
 const scrollBtn = document.getElementById("scrollDownBtn");
 const targetSection = document.getElementById("white_div_apt");
+const snapContainer = document.documentElement;
 
 let isScrolling = false;
 
 scrollBtn.addEventListener("click", () => {
-  if (isScrolling) return; // sprječava višestruke click-ove
+  if (isScrolling) return;
 
   isScrolling = true;
-  const offset = 100;
-  window.scrollTo({
-    top: targetSection.offsetTop + offset,
+
+  snapContainer.scrollTo({
+    top: targetSection.offsetTop,
     behavior: "smooth",
   });
 
-  // reset scroll lock nakon 600ms (vrijeme animacije)
   setTimeout(() => {
     isScrolling = false;
-  }, 600);
+  }, 1200);
 });
+
+/* Scrollanje pritiskom na navigaciju  */
+document.querySelectorAll(".menu__item").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const targetId = link.getAttribute("href").replace("#", "");
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      snapContainer.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+/* Video fix za iphone */
 
 const tryPlay = () => {
   video.play().catch(() => {});
