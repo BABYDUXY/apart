@@ -361,37 +361,45 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         </ul>
       </div>
     </div>
-    <div class="flex items-center content-center w-full h-auto col-span-1 col-start-2 row-span-3 row-start-5 lg:hidden"><div class="flex items-center justify-center w-full h-full gap-4 translate-x-3">
+    <div class="flex items-center content-center w-full h-auto col-span-1 col-start-2 row-span-3 row-start-5 md:hidden"><div class="flex items-center justify-center w-full h-full gap-4 translate-x-3">
       <img class="h-[3vh] animate-swipeX short:animate-swipeXSmall"  src="img/swipe-strelica.svg" alt="Swipe animation"><p class="font-main text-[1.6rem] animate-swipeX2 short:animate-swipeX2Small   text-white font-thin">Swipe</p></div>
 </div>
     </div>
     <!-- Menu For SUP-s -->
-    <div id="priceMenu" class=" lg:hidden snap-start z-[54] absolute top-0 left-0 w-full h-full bg-white   overflow-hidden translate-x-full transition-transform duration-300 grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);]">
+    <div id="priceMenu" class=" md:hidden snap-start z-[54] absolute top-0 left-0 w-full h-full bg-white   overflow-hidden translate-x-full transition-transform duration-300 grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);]">
       <h3 class="font-main text-center col-start-2 text-plava text-4xl font-bold p-[5vh_5vh_0vh_5vh] md:text-[clamp(1.6rem,1.2rem+1vw,3rem)]">Price menu</h3>
       <div class="w-full h-full col-start-2 row-span-5 row-start-2 overflow-y-scroll scrollbar force-scrollbar scrollbar-thumb-plava scrollbar-track-gray-200 "> 
         <!-- KONTEJNER SA KARTICAMA SA CIJENAMA -->
-        <div class="grid grid-cols-1 gap-6 p-4 md:grid-cols-3 font-main text-plava">
-  
-  <div class="flex flex-col items-center p-6 bg-white border-2 shadow-sm border-plava/20 rounded-2xl">
-    <img src="img/sup/1supV3.png" alt="1 SUP" class="h-20 mb-4">
-    <h3 class="mb-4 text-2xl font-bold">1 SUP</h3>
-    <div class="w-full space-y-4">
-      <div class="flex items-center justify-between pb-2 border-b">
-        <span>1 Day</span>
-        <span class="text-xl font-bold">€40</span>
-      </div>
-      <div class="flex items-center justify-between pb-2 border-b">
-        <span>3 Days</span>
-        <span class="text-xl font-bold">€100</span>
-      </div>
-      <div class="flex items-center justify-between">
-        <span>7 Days</span>
-        <span class="text-xl font-bold text-red-500">€200</span>
-      </div>
+  <div class="grid grid-cols-1 gap-4 p-4 pb-36 md:grid-cols-3 font-main text-plava">
+    <!-- Prva karica -->
+    <div class="flex flex-col items-center p-6 bg-white border-2 shadow-sm border-plava/20 rounded-2xl">
+      <img src="img/sup/1supV3.png" alt="1 SUP" class="h-20 mb-4">
+      <h3 class="mb-4 text-2xl font-bold">1 SUP</h3>
+      <div class="w-full space-y-4">
+  <div class="flex items-center justify-between pb-2 border-b">
+    <span>1 Day</span>
+    <span class="text-xl font-bold">€40</span>
+  </div>
+
+  <div class="flex items-center justify-between pb-2 border-b">
+    <span>3 Days</span>
+    <div class="flex flex-col text-right">
+      <span class="text-xl font-bold">€100</span>
+      <span class="text-sm font-semibold opacity-80">-15% </span>
     </div>
   </div>
 
-  <div class="flex flex-col items-center p-6 bg-white border-2 shadow-sm border-plava/20 rounded-2xl">
+  <div class="flex items-center justify-between">
+    <span>7 Days</span>
+    <div class="flex flex-col text-right">
+      <span class="text-xl font-bold text-red-500">€200</span>
+      <span class="text-sm font-semibold text-red-500 opacity-80">-30%</span>
+    </div>
+  </div>
+</div>
+  </div>
+<!-- Druga kartica -->
+  <div class="flex flex-col items-center p-6 py-4 bg-white border-2 shadow-sm border-plava/20 rounded-2xl">
     <img src="img/sup/2supV3.png" alt="2 SUPs" class="h-20 mb-4">
     <h3 class="mb-4 text-2xl font-bold">2 SUPs</h3>
     <div class="w-full space-y-4">
@@ -399,28 +407,28 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <span>1 Day</span>
         <span class="text-xl font-bold">€60</span>
       </div>
-      <div class="flex items-center justify-between pb-2 text-blue-600 border-b">
+      <div class="flex items-center justify-between pb-3 border-b text-plava">
         <span>3 Days</span>
-        <div class="text-right">
+        <div class="flex flex-col gap-1 text-right">
             <span class="block text-xl font-bold">€150</span>
             <span class="text-xs italic leading-none">€25 / board / day</span>
         </div>
       </div>
       <div class="flex items-center justify-between">
         <span>7 Days</span>
-        <div class="text-right">
-            <span class="block text-xl font-bold">€280</span>
-            <span class="text-xs font-semibold text-green-600">Save €280!</span>
+        <div class="flex flex-col gap-1 text-right">
+            <span class="block text-[1.3rem] font-bold">€280</span>
+            <span class="text-sm font-semibold text-green-600">Save €280!</span>
         </div>
       </div>
     </div>
   </div>
-
+<!-- Treca kartica -->
   <div class="relative border-4 border-plava rounded-2xl p-6 flex flex-col items-center bg-gradient-to-b from-plava to-[#1a3d52] text-white shadow-xl transform md:scale-105">
     <div class="absolute px-4 py-1 text-sm font-black tracking-widest uppercase bg-yellow-400 rounded-full shadow-md -top-4 text-plava">
         Best Value
     </div>
-    <img src="img/sup/3supV3.png" alt="3 SUPs" class="h-20 mb-4 brightness-0 invert">
+    <img src="img/sup/3supV3.png" alt="3 SUPs" class="h-20 mb-2 ">
     <h3 class="mb-4 text-2xl font-black">3 SUPs</h3>
     
     <div class="w-full space-y-4">
@@ -428,24 +436,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <span>1 Day</span>
         <span class="text-xl font-bold">€80</span>
       </div>
-      <div class="flex items-center justify-between pb-2 border-b border-white/20">
+      <div class="flex items-center justify-between pb-3 border-b border-white/20">
         <span>3 Days</span>
-        <div class="text-right">
+        <div class="flex flex-col gap-1 text-right ">
             <span class="block text-xl font-bold">€190</span>
             <span class="text-xs opacity-80">€21 / board / day</span>
         </div>
       </div>
       
-      <div class="flex items-center justify-between pt-2">
+      <div class="flex items-center justify-between ">
         <span class="font-bold">7 Days</span>
-        <div class="text-right">
+        <div class="flex flex-col text-right">
             <span class="block text-sm line-through opacity-60">€840</span>
-            <span class="block text-3xl font-black text-yellow-400">€360</span>
-            <span class="text-xs font-bold bg-green-500 px-2 py-0.5 rounded italic">Save €480!</span>
+            <span class="block pb-2 text-3xl font-black text-yellow-400">€360</span>
+            <span class="text-sm font-bold bg-green-600 px-2 py-0.5 rounded italic">Save €480!</span>
         </div>
       </div>
     </div>
-    <p class="mt-4 text-[0.7rem] text-center opacity-70">Perfect for families & groups</p>
+    <p class="mt-4 text-[0.8rem] text-center opacity-70">Perfect for families & groups</p>
   </div>
 
   </div>
