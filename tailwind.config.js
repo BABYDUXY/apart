@@ -18,6 +18,8 @@ module.exports = {
         lg: "1025px",
         short: { raw: "(max-height:700px)" },
         ultra_short: { raw: "(max-height:640px)" },
+        "no-ios": { raw: "(pointer: fine)" },
+        "is-ios": { raw: "-webkit-overflow-scrolling: touch" },
       },
       keyframes: {
         swipeX: {

@@ -3,28 +3,34 @@ const video = document.getElementById("heroVideo");
 let hasPlayedOnce = false;
 
 /* Scrollanje pritiskom na strelicu */
-const scrollBtn = document.getElementById("scrollDownBtn");
-const targetSection = document.getElementById("white_div_apt");
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 const snapContainer = document.documentElement;
+// Ako NIJE ios, onda dodaj event listener
+if (!isIOS) {
+  const scrollBtn = document.getElementById("scrollDownBtn");
+  const targetSection = document.getElementById("white_div_apt");
 
-let isScrolling = false;
+  let isScrolling = false;
 
-scrollBtn.addEventListener("click", () => {
-  if (isScrolling) return;
+  scrollBtn.addEventListener("click", () => {
+    if (isScrolling) return;
+    isScrolling = true;
 
-  isScrolling = true;
+    snapContainer.scrollTo({
+      top: targetSection.offsetTop,
+      behavior: "smooth",
+    });
 
-  snapContainer.scrollTo({
-    top: targetSection.offsetTop,
-    behavior: "smooth",
+    setTimeout(() => {
+      isScrolling = false;
+    }, 1200);
   });
-
-  setTimeout(() => {
-    isScrolling = false;
-  }, 1200);
-});
+} else {
+  //AKo je IOS
+}
 
 /* Scrollanje pritiskom na navigaciju  */
+
 document.querySelectorAll(".menu__item").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -33,10 +39,19 @@ document.querySelectorAll(".menu__item").forEach((link) => {
     const target = document.getElementById(targetId);
 
     if (target) {
-      snapContainer.scrollTo({
-        top: target.offsetTop,
-        behavior: "smooth",
-      });
+      if (isIOS) {
+        // iOS FI
+        target.scrollIntoView({
+          behavior: "auto",
+          block: "start",
+        });
+      } else {
+        // Za android
+        snapContainer.scrollTo({
+          top: target.offsetTop,
+          behavior: "smooth",
+        });
+      }
     }
   });
 });
