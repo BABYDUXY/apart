@@ -29,8 +29,7 @@
     />
     <!-- css -->
     <link href="css/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/hamburger.css" />
-
+    
     <!-- javascript -->
 
     <script src="js/cookie.js"></script>
@@ -64,9 +63,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       </label>
       <ul class="menu__box font-main">
         <li><a class="menu__item" href="#main_page">Home</a></li>
-        <li><a class="menu__item" href="#white_div_apt">Apartment</a></li>
-        <li><a class="menu__item" href="#location">Location</a></li>
-        <li><a class="menu__item" href="#contact_us">Contact</a></li>
+        <li><a class="menu__item" href="#white_div_apt">Alloggio</a></li>
+        <li><a class="menu__item" href="#horizontalniSup">Rent a SUP</a></li>
+        <li><a class="menu__item" href="#location">Dove siamo</a></li>
+        <li><a class="menu__item" href="#contact_us">Contattaci</a></li>
 
         <span>
           <img src="img/uk.png" onclick="language('index')" hreflang="en" alt="United kingdomn flag icon">
@@ -130,8 +130,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         class="z-10 flex flex-col min-h-[100svh] justify-evenly items-center"
       >
         <h2 class="z-10 text-3xl text-center text-white font-main">
-          Enhance your experience
-          <br />with
+          Migliora la tua vacanza
+          <br />con gli
         </h2>
 
         <h1
@@ -143,8 +143,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           <h2
             class="z-10 text-2xl font-semibold text-center text-white font-main w-min"
           >
-            Discover <br />
-            More
+            Scopri <br />
+             di più
           </h2>
           <svg
           id="scrollDownBtn"
@@ -170,7 +170,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       <h3
         class="font-main text-4xl md:text-[clamp(1.6rem,1.2rem+1vw,3rem)] lg:mt-[5rem] text-plava p-[3vh] self-center font-bold lg:col-end-3 col-end-3 col-start-2"
       >
-        4 Person <span class="hidden md:inline">Apartment</span>
+        4 Persone
       </h3>
 
       <div
@@ -253,20 +253,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <p 
           class="text-white font-main text-[clamp(0.8rem,0.2rem+1vw,3rem)] opacity-0 w-3/4 appearing"
         >
-          A modern, newly decorated apartment with 2 bedrooms, 1 bathroom, kitchen and a living room. We aim to exceed all your needs and improve your travelling experience.
-        </p>
+         Un appartamento moderno, arredato di recente, con 2 camere da letto, 1 bagno, cucina e soggiorno. Il nostro obiettivo è superare ogni vostra aspettativa e rendere la vostra esperienza di viaggio indimenticabile.</p>
       </div>
       <ul
         class="col-start-2 font-main text-lg text-plava mt-[1vh] flex flex-col font-semibold gap-[2vh] [&>*]:flex [&>*]:flex-row [&>*]:gap-8 [&>*]:items-center md:grid grid-cols-2 md:w-full md:col-start-2 md:col-end-3 lg:col-end-4 md:place-items-center sm:p-[3rem_0_6rem_0] [&>*]:lg:w-1/2 [&>*]:flex-nowrap [&>*]:lg:scale-110 lg:gap-8"
       >
         <li>
           <img class="w-10" src="img/parking.png" alt="Logo for free parking" />
-          <p class="basis-[15ch]">Free Parking</p>
+          <p class="basis-[15ch]">Parcheggio gratis</p>
           <img class="w-7" src="img/check.png" alt="Check logo" />
         </li>
         <li>
           <img class="w-10" src="img/location.png" alt="Logo location point" />
-          <p class="basis-[15ch]">Ideal Position</p>
+          <p class="basis-[15ch]">Posizione strategica</p>
           <img class="w-7" src="img/check.png" alt="Check logo" />
         </li>
         <li>
@@ -275,17 +274,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
             src="img/dog.png"
             alt="Logo for pet friendly, logo of a dog"
           />
-          <p class="basis-[15ch]">Pet Friendly</p>
+          <p class="basis-[15ch]">Animali ammessi</p>
           <img class="w-7" src="img/check.png" alt="Check logo" />
         </li>
         <li>
           <img class="w-10" src="img/wifi.png" alt="wi-fi logo" />
-          <p class="basis-[15ch]">Free Wi-Fi</p>
+          <p class="basis-[15ch]">Wi-Fi gratuito</p>
           <img class="w-7" src="img/check.png" alt="Check logo" />
         </li>
         <li>
           <img class="w-10" src="img/ac.png" alt="Air conditoner logo" />
-          <p class="basis-[15ch]">AC Cooling</p>
+          <p class="basis-[15ch]">Aria condizionata</p>
           <img class="w-7" src="img/check.png" alt="Check logo" />
         </li>
 
@@ -301,19 +300,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
     <!-- RENT A SUP -------------------------------------------- -->
      <div class="lg:w-full lg:grid lg:grid-cols-[10%_80%_10%]">
     <section
-    class=" bg-plava md:my-[15vh] md:h-auto lg:col-start-2 lg:rounded-[2vw]"
+    id="horizontalniSup"
+    class=" bg-plava md:my-[15vh] snap-start snap-always md:h-auto lg:col-start-2 lg:rounded-[2vw] relative flex  scroll-smooth overflow-x-auto snap-x snap-mandatory"
   >
-    <div
+    <div 
       id="rentasup"
-      class="h-svh lg:h-[80vh] md:[h-60vh] w-full grid grid-cols-[10%_1fr_10%] lg:grid-cols-[50%_50%] justify-items-center grid-rows-[repeat(7,1fr);] snap-start snap-always "
+      class="h-svh lg:h-[80vh] md:[h-60vh] w-full grid grid-cols-[10%_1fr_10%] lg:grid-cols-[50%_50%] justify-items-center grid-rows-[repeat(7,1fr);] snap-start "
     >
     <div class="flex flex-col items-center content-center justify-center col-start-2 border-white lg:col-start-1 border-x-2 lg:col-span-2">
       <h3
         class=" font-main text-white text-4xl font-bold p-[5vh_5vh_0vh_5vh] col-start-2 self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)]"
       >
-        Rent a SUP
+        Noleggio SUP
       </h3>
-      <h5 class="col-start-2 row-start-2 text-lg font-semibold text-white font-main">Great Price</h5>
+      <h5 class="col-start-2 row-start-2 text-lg font-semibold text-white font-main">Ottimo prezzo</h5>
     </div>
       <div
         class="font-main text-white text-[1.1rem] col-start-2 row-start-3 w-full m-auto md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] lg:row-start-3 lg:col-start-1  lg:text-left lg:w-[75%] lg:row-span-3"
@@ -336,10 +336,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
 
       <div
       id="image-slider2"
-      class="z-20 col-start-1 col-end-4 row-start-4 shadow-xl splide xs:col-start-2 xs:col-end-3 h-max lg:row-start-3 lg:!col-start-2 lg:w-[90%] lg:row-span-7"
+      class="z-20 col-start-1 short:h-[35svh] h-[40svh] overflow-hidden col-end-4 row-start-4 shadow-xl splide xs:col-start-2 xs:col-end-3 md:h-max lg:row-start-3 lg:!col-start-2 lg:w-[90%] lg:row-span-7"
     >
-      <div class="splide__track h-[40vh] md:h-[min(30rem,100%)] ">
-        <ul class=" splide__list">
+      <div class="splide__track  short:h-[120%] short:translate-y-[-7%] h-full md:h-[min(30rem,100%)] ">
+         <ul class=" splide__list">
           <li class="object-cover splide__slide">
             <figure class="object-cover h-full ">
             <img class="object-cover h-full" src="img/sup/zena.webp" alt="a women on a sup board"/>
@@ -362,8 +362,118 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           </li>
           
         </ul>
+    </div>
+    </div>
+    <div class="flex items-center content-center w-full h-auto col-span-1 col-start-2 row-span-3 row-start-5 md:hidden"><div class="flex items-center justify-center w-full h-full gap-4 translate-x-3">
+      <img class="h-[3vh] animate-swipeX short:animate-swipeXSmall"  src="img/swipe-strelica.svg" alt="Swipe animation"><p class="font-main text-[1.6rem] animate-swipeX2 short:animate-swipeX2Small   text-white font-thin">Scorri</p></div>
+</div>
+    </div>
+    <!-- Menu For SUP-s -->
+    <div id="priceMenu" class=" md:hidden snap-start z-[54] absolute top-0 left-0 w-full h-full bg-white   overflow-hidden translate-x-full transition-transform duration-300 grid grid-cols-[10%_1fr_10%] justify-items-center grid-rows-[repeat(7,1fr);]">
+      <h3 class="font-main text-center col-start-2 text-plava text-4xl font-bold p-[5vh_5vh_0vh_5vh] md:text-[clamp(1.6rem,1.2rem+1vw,3rem)]">Listino prezzi</h3>
+      <div class="w-full h-full col-start-2 row-span-5 row-start-2 overflow-y-scroll scrollbar force-scrollbar scrollbar-thumb-plava scrollbar-track-gray-200 "> 
+        <!-- KONTEJNER SA KARTICAMA SA CIJENAMA -->
+  <div class="grid grid-cols-1 gap-4 p-4 pb-36 md:grid-cols-3 font-main text-plava">
+    <!-- Prva karica -->
+    <div class="flex flex-col items-center p-6 bg-white border-2 shadow-sm border-plava/20 rounded-2xl">
+      <img src="img/sup/1supV3.png" alt="1 SUP" class="h-20 mb-4">
+      <h3 class="mb-4 text-2xl font-bold">1 SUP</h3>
+      <div class="w-full space-y-4">
+  <div class="flex items-center justify-between pb-2 border-b">
+    <span>1 Giorno</span>
+    <span class="text-xl font-bold">€40</span>
+  </div>
+
+  <div class="flex items-center justify-between pb-2 border-b">
+    <span>3 Giorni</span>
+    <div class="flex flex-col text-right">
+      <span class="text-xl font-bold">€100</span>
+      <span class="text-sm font-semibold opacity-80">-15% </span>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-between">
+    <span>7 Giorni</span>
+    <div class="flex flex-col text-right">
+      <span class="text-xl font-bold text-red-500">€200</span>
+      <span class="text-sm font-semibold text-red-500 opacity-80">-30%</span>
+    </div>
+  </div>
+</div>
+  </div>
+<!-- Druga kartica -->
+  <div class="flex flex-col items-center p-6 py-4 bg-white border-2 shadow-sm border-plava/20 rounded-2xl">
+    <img src="img/sup/2supV3.png" alt="2 SUPs" class="h-20 mb-4">
+    <h3 class="mb-4 text-2xl font-bold">2 SUPs</h3>
+    <div class="w-full space-y-4">
+      <div class="flex items-center justify-between pb-2 border-b">
+        <span>1 Giorno</span>
+        <span class="text-xl font-bold">€60</span>
+      </div>
+      <div class="flex items-center justify-between pb-3 border-b text-plava">
+        <span>3 Giorni</span>
+        <div class="flex flex-col gap-1 text-right">
+            <span class="block text-xl font-bold">€150</span>
+            <span class="text-xs italic leading-none">€25 / tavola / giorno</span>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <span>7 Giorni</span>
+        <div class="flex flex-col gap-1 text-right">
+            <span class="block text-[1.3rem] font-bold">€280</span>
+            <span class="text-sm font-semibold text-green-600">Risparmia €280!</span>
+        </div>
       </div>
     </div>
+  </div>
+<!-- Treca kartica -->
+  <div class="relative border-4 border-plava rounded-2xl p-6 flex flex-col items-center bg-gradient-to-b from-plava to-[#1a3d52] text-white shadow-xl transform md:scale-105">
+    <div class="absolute px-4 py-1 text-sm font-black tracking-widest uppercase bg-yellow-400 rounded-full shadow-md -top-4 text-plava">
+        Migliore offerta
+    </div>
+    <img src="img/sup/3supV3.png" alt="3 SUPs" class="h-20 mb-2 ">
+    <h3 class="mb-4 text-2xl font-black">3 SUPs</h3>
+    
+    <div class="w-full space-y-4">
+      <div class="flex items-center justify-between pb-2 border-b border-white/20">
+        <span>1 Giorno</span>
+        <span class="text-xl font-bold">€80</span>
+      </div>
+      <div class="flex items-center justify-between pb-3 border-b border-white/20">
+        <span>3 Giorni</span>
+        <div class="flex flex-col gap-1 text-right ">
+            <span class="block text-xl font-bold">€190</span>
+            <span class="text-xs opacity-80">€21 / tavola / giorno</span>
+        </div>
+      </div>
+      
+      <div class="flex items-center justify-between ">
+        <span class="font-bold">7 Giorni</span>
+        <div class="flex flex-col text-right">
+            <span class="block text-sm line-through opacity-60">€840</span>
+            <span class="block pb-2 text-3xl font-black text-yellow-400">€360</span>
+            <span class="text-sm font-bold bg-green-600 px-2 py-0.5 rounded italic">Risparmia €480!</span>
+        </div>
+      </div>
+    </div>
+    <p class="mt-4 text-[0.8rem] text-center opacity-70">Ideale per famiglie e gruppi</p>
+  </div>
+
+  </div>
+
+</div>
+<!-- Val i swipe -->
+<div class="relative bottom-0  !bg-red-400 flex items-end justify-center h-full col-span-3 col-start-1 row-span-2  w-[120%]">
+  <div class="w-[170%] z-6 animate-wave  absolute bottom-0 short:-bottom-[5vh] left-0 ">
+    <img class="w-full animate-waveBob"  src="img/wave.svg" alt="Wave">
+  </div>
+  <div class="mb-[2svh]">
+  <div class="rotate-90">
+    <img class="h-[4vh] animate-swipeX short:animate-swipeXSmall"  src="img/swipe-strelica.svg" alt="Wave">
+  </div>
+  <p class="font-main text-[1.6rem] animate-swipeY2 short:animate-swipeY2Small   text-white font-thin">Scorri</p>
+</div>
+</div>
     </div>
   </section>
   <!-- BOAT RIDE -------------------------------------------- -->
@@ -493,30 +603,37 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <h3
           class="font-main text-white text-4xl font-bold p-[5vh] col-start-2 self-center md:place-self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)] md:p-[20%_0_10%_0]"
         >
-          Location
+          Dove siamo
         </h3>
         <div
           class="font-main text-white text-[1.1rem] col-start-2 w-full m-auto md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:mt-0 lg:w-[90%] md:pb-[2vh] lg:pb-[20%]"
         >
           <p class="lg:hidden long_sm:pb-[2vh]">
-            Apartments Gušćić are located in the ideal position within the
-            island of <a class="underline " href="https://www.placesofjuma.com/rab-island-croatia/">Rab</a>. <section class="lg:hidden long_sm:pb-[3vh]"> With stunning beaches and a beautiful adriatic sea just 100 meters away, and a 5 minute walk from the gorgeous <a  class="underline" href="https://en.wikipedia.org/wiki/Rab_(town)">old
-              Town of Rab</a></section>
-          </p>
-          <p class="hidden lg:block">
-            Apartments Gušćić are located in the ideal position within the
-            island of <a class="underline" href="https://www.placesofjuma.com/rab-island-croatia/">Rab</a>.
-          </p>
-          <br class="hidden lg:block">
-          <p class="hidden lg:block">
-            With stunning beaches and a beautiful adriatic sea just 100 meters away, and a 5 minute walk from the gorgeous <a  class="underline" href="https://en.wikipedia.org/wiki/Rab_(town)">old
-            Town of Rab</a>.
-          </p>
-          <br  />
-          <p class="hidden lg:block">
-            With all of that there are police station, ambulance and a grocery store all within 100 meters.
-          </p>
-        </div>
+  Gli appartamenti Gušćić si trovano in una posizione ideale sull'isola di 
+  <a class="underline" href="https://www.placesofjuma.com/rab-island-croatia/">Rab</a>. 
+  <section class="lg:hidden long_sm:pb-[3vh]"> 
+    Con spiagge mozzafiato e lo splendido mare Adriatico a soli 100 metri, e a soli 5 minuti a piedi dal meraviglioso 
+    <a class="underline" href="https://en.wikipedia.org/wiki/Rab_(town)">centro storico di Rab</a>.
+  </section>
+</p>
+
+<p class="hidden lg:block">
+  Gli appartamenti Gušćić si trovano in una posizione ideale sull'isola di 
+  <a class="underline" href="https://www.placesofjuma.com/rab-island-croatia/">Rab</a>.
+</p>
+
+<br class="hidden lg:block">
+
+<p class="hidden lg:block">
+  Con spiagge mozzafiato e lo splendido mare Adriatico a soli 100 metri, e a soli 5 minuti a piedi dal meraviglioso 
+  <a class="underline" href="https://en.wikipedia.org/wiki/Rab_(town)">centro storico di Rab</a>.
+</p>
+
+<br />
+
+<p class="hidden lg:block">
+  Inoltre, troverete la stazione di polizia, il pronto soccorso e un negozio di alimentari, tutto nel raggio di 100 metri.
+</p></div>
         <div
           class="col-start-1 col-end-4 h-[40vh] w-full md:w-0 overflow-hidden bg-black md:rounded-[2vw_0_0_2vw] md:absolute md:left-0 md:col-end-3 md:col-start-2 md:h-[70%] md:place-self-center mapa short:h-[45vh]"
         ><gmp-map center="44.7638053894043,14.75610637664795" zoom="15" map-id="DEMO_MAP_ID">
@@ -525,7 +642,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <p
           class="col-start-2 font-main text-white text-md text-center short:hidden mt-[5vh] md:pb-0 md:mt-0 md:text-[clamp(0.8rem,0.2rem+1vw,1.2rem)] "
         >
-          Adress : Palit 232, Rab
+          Indirizzo : Palit 232, Rab
         </p>
       </div>
     </section>
@@ -538,7 +655,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
       <h3
         class="font-main text-plava text-4xl font-bold p-[4vh] col-start-2 self-center md:text-[clamp(1.6rem,1.2rem+1vw,3rem)] lg:mb-[5vh]"
       >
-        Contact Us
+        Contattaci
       </h3>
 
       <form action="php/mail.php" method="post"  id="form"
@@ -554,7 +671,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
           required 
           name="ime"
           type="text"
-          placeholder="Full Name"
+          placeholder="Nome e Cognome"
           class="text-plava text-sm placeholder:text-plava placeholder:text-sm  placeholder:font-main w-3/5 rounded-[6px] h-9 self-end p-3 mt-9 md:col-start-1 md:mt-0 md:bg-plava md:text-white md:placeholder:text-white md:justify-self-end md:h-12 lg:h-[max(3vw,3rem)] md:w-full md:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)] md:placeholder:text-[clamp(0.8rem,0.2rem+1vw,1.4rem)]" 
         /><input
           required
