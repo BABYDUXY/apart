@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://apartmentsguscic.com/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://apartmentsguscic.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://apartmentsguscic.com/Deutsch.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://apartmentsguscic.com/Italiano.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://apartmentsguscic.com/Hrvatski.html"/>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://apartmentsguscic.com/Deutsch.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://apartmentsguscic.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://apartmentsguscic.com/Deutsch.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://apartmentsguscic.com/Italiano.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://apartmentsguscic.com/Hrvatski.html"/>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://apartmentsguscic.com/Italiano.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://apartmentsguscic.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://apartmentsguscic.com/Deutsch.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://apartmentsguscic.com/Italiano.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://apartmentsguscic.com/Hrvatski.html"/>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://apartmentsguscic.com/Hrvatski.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://apartmentsguscic.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://apartmentsguscic.com/Deutsch.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://apartmentsguscic.com/Italiano.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://apartmentsguscic.com/Hrvatski.html"/>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
