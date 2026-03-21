@@ -70,11 +70,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         <li><a class="menu__item" href="#contact_us">Contact</a></li>
 
         <span>
-          <img src="img/uk.png" onclick="language('index')" hreflang="en" alt="United kingdomn flag icon">
-          <img src="img/german.png" onclick="language('Deutsch')" hreflang="de" alt="german flag icon">
-          <img src="img/italy.png" onclick="language('Italiano')" hreflang="it" alt="Italia flag icon">
-          <img src="img/croatia.png" onclick="language('Hrvatski')" hreflang="hr" alt="Croatian flag icon">
-        </span>
+  <a href="index.html" onclick="language('index'); return false;">
+    <img src="img/uk.png" alt="English">
+  </a>
+  
+  <a href="Deutsch.html" onclick="language('Deutsch'); return false;">
+    <img src="img/german.png" alt="Deutsch">
+  </a>
+  
+  <a href="Italiano.html" onclick="language('Italiano'); return false;">
+    <img src="img/italy.png" alt="Italiano">
+  </a>
+  
+  <a href="Hrvatski.html" onclick="language('Hrvatski'); return false;">
+    <img src="img/croatia.png" alt="Hrvatski">
+  </a>
+</span>
       </ul>
 
       
@@ -96,16 +107,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css
         >
           Language
         </h3>
-        <ul
-          class="text-2xl font-main text-center h-[calc(100%-6rem)] grid items-center [&>*]:hover:cursor-pointer [&>*]:border-b-2 [&>*]:border-white [&>*]:w-[50%] [&>*]:transition-all [&>*:hover]:w-[60%] [&>*]:m-auto [&>*]:pb-1 [&>*]:text-white [&>#default]:border-white [&>#default]:text-white [&>*]:mb-3"
-        >
-            <li id="default">
-              <a onclick="language('index')" hreflang="en">English</a>
-            </li>
-            <li><a onclick="language('Deutsch')" hreflang="de">Deutsch</a></li>
-            <li><a onclick="language('Italiano')" hreflang="it">Italiano</a></li>
-            <li><a onclick="language('Hrvatski')" hreflang="hr">Hrvatski</a></li>
-          </ul>
+        <ul class="text-2xl font-main text-center h-[calc(100%-6rem)] grid items-center [&>*]:hover:cursor-pointer [&>*]:border-b-2 [&>*]:border-white [&>*]:w-[50%] [&>*]:transition-all [&>*:hover]:w-[60%] [&>*]:m-auto [&>*]:pb-1 [&>*]:text-white [&>#default]:border-white [&>#default]:text-white [&>*]:mb-3">
+    <li id="default">
+      <a href="index.html" onclick="language('index'); return false;" hreflang="en">English</a>
+    </li>
+    <li>
+      <a href="Deutsch.html" onclick="language('Deutsch'); return false;" hreflang="de">Deutsch</a>
+    </li>
+    <li>
+      <a href="Italiano.html" onclick="language('Italiano'); return false;" hreflang="it">Italiano</a>
+    </li>
+    <li>
+      <a href="Hrvatski.html" onclick="language('Hrvatski'); return false;" hreflang="hr">Hrvatski</a>
+    </li>
+</ul>
         </div>
         <div
           class="absolute top-0 left-0 z-40 w-full h-screen bg-black opacity-55"
